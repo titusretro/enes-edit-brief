@@ -469,6 +469,100 @@
       border-bottom: 0;
     }
 
+    .spine-feature {
+      margin: 28px 0 40px;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      background: var(--surface-solid);
+      overflow: hidden;
+    }
+
+    .spine-feature-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      padding: 20px 22px 18px;
+      border-bottom: 1px solid var(--border);
+      background: #f9f9f8;
+    }
+
+    .spine-feature-head h2 {
+      margin: 0;
+      font-family: "Newsreader", "Instrument Serif", "Playfair Display", serif;
+      font-size: clamp(1.8rem, 2.5vw, 2.35rem);
+      line-height: 1.08;
+      letter-spacing: -0.03em;
+    }
+
+    .spine-feature-kicker {
+      color: var(--muted);
+      font-size: 11px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .spine-feature-copy {
+      max-width: 320px;
+      color: var(--muted);
+      font-size: 0.9rem;
+      line-height: 1.65;
+    }
+
+    .spine-story {
+      padding: 12px 22px 24px;
+      display: grid;
+      gap: 10px;
+    }
+
+    .spine-story-row {
+      display: grid;
+      grid-template-columns: 150px minmax(0, 1fr);
+      gap: 18px;
+      align-items: start;
+      padding: 14px 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .spine-story-row:last-child {
+      border-bottom: 0;
+    }
+
+    .spine-story-label {
+      display: inline-flex;
+      align-items: center;
+      width: fit-content;
+      padding: 7px 10px;
+      border-radius: 999px;
+      font-size: 11px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      background: var(--blue-bg);
+      color: var(--blue-text);
+    }
+
+    .spine-story-row:nth-child(2n) .spine-story-label {
+      background: var(--green-bg);
+      color: var(--green-text);
+    }
+
+    .spine-story-row:nth-child(3n) .spine-story-label {
+      background: var(--yellow-bg);
+      color: var(--yellow-text);
+    }
+
+    .spine-story-row:nth-child(4n) .spine-story-label {
+      background: var(--red-bg);
+      color: var(--red-text);
+    }
+
+    .spine-story-text {
+      margin: 0;
+      font-size: 1.02rem;
+      line-height: 1.8;
+      letter-spacing: -0.01em;
+    }
+
     .transcript-intro {
       display: grid;
       grid-template-columns: 1.15fr 0.85fr;
@@ -804,6 +898,41 @@
             <p class="eyebrow">Editorial brief</p>
             <h1>Edit Brief — Het Pleintje Van, Aflevering 1: Enes</h1>
             <p class="report-kicker">Gegenereerd op basis van roughcut <code>pleintje_afl1_20260505_142807</code> · 33 clips · 11:47</p>
+            <section class="spine-feature">
+              <div class="spine-feature-head">
+                <div>
+                  <p class="spine-feature-kicker">Narrative spine</p>
+                  <h2>De Pixar Spine voor deze aflevering</h2>
+                </div>
+                <p class="spine-feature-copy">Eerst het hele verhaal in zes stappen. Zo zie je meteen wat de montage probeert te doen, nog voordat je de beats of het transcript induikt.</p>
+              </div>
+              <div class="spine-story">
+                <div class="spine-story-row">
+                  <span class="spine-story-label">Er was eens</span>
+                  <p class="spine-story-text">een jongen die dag en nacht voetbalde op de Aker in Amsterdam West.</p>
+                </div>
+                <div class="spine-story-row">
+                  <span class="spine-story-label">Elke dag</span>
+                  <p class="spine-story-text">reed een bus hem om vijf uur ochtend op en bracht hem terug om acht uur 's avonds.</p>
+                </div>
+                <div class="spine-story-row">
+                  <span class="spine-story-label">Tot op een dag</span>
+                  <p class="spine-story-text">gaf Erik ten Hag hem zijn debuut bij Jong Ajax op <strong>13 januari 2020</strong>.</p>
+                </div>
+                <div class="spine-story-row">
+                  <span class="spine-story-label">Waardoor</span>
+                  <p class="spine-story-text">zijn familie voor het eerst als gezin trots kon zijn op wat hij had bereikt.</p>
+                </div>
+                <div class="spine-story-row">
+                  <span class="spine-story-label">Tot uiteindelijk</span>
+                  <p class="spine-story-text">een blessure in corona hem in een rolstoel zette op het moment dat hij alles verwachtte.</p>
+                </div>
+                <div class="spine-story-row">
+                  <span class="spine-story-label">En sindsdien</span>
+                  <p class="spine-story-text">weet hij: <strong>mijn droom is helemaal niet veranderd. Ik had juist meer motivatie.</strong></p>
+                </div>
+              </div>
+            </section>
             <hr>
             <h2>Wie is Enes</h2>
             <p>Amsterdam West, de Aker. Marokkaanse roots, Comorese paspoort (Afrika Cup). Jeugdclubs: Blauw-Wit → Pankratius → AFC Amsterdam → AZ (12 jr, gescout) → Ajax (16 jr). Debuut Jong Ajax op <strong>13 januari 2020</strong> onder <strong>Erik ten Hag</strong>. Daarna de weg via Roma en PSV, met het WK als stip op de horizon.</p>
@@ -875,19 +1004,6 @@
             <p><strong>Beat 3 tijdstip:</strong> de zingclips liggen op ~56:17 in het hoofdinterview — vlak voor het einde. In de roughcut zitten ze op positie 3 (2:00–3:00). Dat vraagt om een harde cut. Zorg dat de editor weet dat dit geen continuïteit-snede is maar een bewuste structuurgreep.</p>
             <p><strong>Ibrahim in beat 2 vs beat 6:</strong> Ibrahim verschijnt twee keer. Eerste keer anoniem (kijker weet nog niet wie hij is), tweede keer als gezinsreactie op het debuut. Als je bij beat 2 zijn naam wil introduceren, kan dat — maar het hoeft niet.</p>
             <p><strong>Lengte:</strong> 11:47 zit in de groene zone (10-13 min). Beat 8 is het meest kwetsbaar bij inkorten — dat kan terug naar 70 sec als het moet, maar niet verder.</p>
-            <hr>
-            <h2>De Pixar Spine voor deze aflevering</h2>
-            <pre><code>Er was eens een jongen die dag en nacht voetbalde op de Aker in Amsterdam West.
-
-Elke dag reed een bus hem om vijf uur ochtend op en bracht hem terug om acht uur 's avonds.
-
-Tot op een dag Erik ten Hag hem zijn debuut gaf bij Jong Ajax — 13 januari 2020.
-
-Waardoor zijn familie voor het eerst als gezin trots kon zijn op wat hij had bereikt.
-
-Tot uiteindelijk een blessure in corona hem in een rolstoel zette op het moment dat hij alles verwachtte.
-
-En sindsdien weet hij: mijn droom is helemaal niet veranderd. Ik had juist meer motivatie.</code></pre>
             <hr>
             <p class="report-kicker">Roughcut gegenereerd door Ben's Editbot op basis van 61 min hoofdinterview + 25 min testimonials.</p>
             <p class="report-kicker">XML: <code>roughcuts/pleintje_afl1_20260505_142807.xml</code></p>
