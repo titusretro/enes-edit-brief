@@ -469,33 +469,44 @@
       border-bottom: 0;
     }
 
-    .utility-deck {
+    .beat-grid {
       display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
       gap: 18px;
-      margin: 0 0 40px;
+      margin: 22px 0 0;
     }
 
-    .utility-card {
+    .beat-card {
       border: 1px solid var(--border);
       border-radius: 12px;
       background: var(--surface-solid);
       padding: 22px 22px 24px;
     }
 
-    .utility-card h3 {
-      margin: 0 0 10px;
-      font-size: 1.08rem;
-      line-height: 1.3;
-      letter-spacing: -0.02em;
+    .beat-card:nth-child(4n + 1) {
+      background: linear-gradient(180deg, rgba(225, 243, 254, 0.28), rgba(255, 255, 255, 0.96) 36%);
     }
 
-    .utility-card p {
-      margin-bottom: 0;
-      color: var(--muted);
+    .beat-card:nth-child(4n + 2) {
+      background: linear-gradient(180deg, rgba(237, 243, 236, 0.36), rgba(255, 255, 255, 0.96) 36%);
     }
 
-    .utility-kicker {
+    .beat-card:nth-child(4n + 3) {
+      background: linear-gradient(180deg, rgba(251, 243, 219, 0.42), rgba(255, 255, 255, 0.96) 36%);
+    }
+
+    .beat-card:nth-child(4n + 4) {
+      background: linear-gradient(180deg, rgba(253, 235, 236, 0.38), rgba(255, 255, 255, 0.96) 36%);
+    }
+
+    .beat-head {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 14px;
+    }
+
+    .beat-kicker {
       margin: 0 0 10px;
       color: var(--muted);
       font-size: 11px;
@@ -503,44 +514,91 @@
       text-transform: uppercase;
     }
 
-    .utility-list {
-      list-style: none;
-      margin: 16px 0 0;
-      padding: 0;
-      display: grid;
-      gap: 12px;
+    .beat-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 64px;
+      padding: 7px 11px;
+      border-radius: 999px;
+      font-size: 11px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      background: var(--blue-bg);
+      color: var(--blue-text);
+      white-space: nowrap;
     }
 
-    .utility-list li {
-      position: relative;
+    .beat-card:nth-child(4n + 2) .beat-badge {
+      background: var(--green-bg);
+      color: var(--green-text);
+    }
+
+    .beat-card:nth-child(4n + 3) .beat-badge {
+      background: var(--yellow-bg);
+      color: var(--yellow-text);
+    }
+
+    .beat-card:nth-child(4n + 4) .beat-badge {
+      background: var(--red-bg);
+      color: var(--red-text);
+    }
+
+    .beat-title {
       margin: 0;
-      padding-left: 18px;
+      font-size: 1.2rem;
+      line-height: 1.25;
+      letter-spacing: -0.02em;
+    }
+
+    .beat-range {
+      margin: 6px 0 0;
+      color: var(--muted);
+      font-size: 0.86rem;
+      line-height: 1.6;
+    }
+
+    .beat-summary {
+      margin: 0 0 16px;
+    }
+
+    .beat-notes {
+      display: grid;
+      gap: 10px;
+    }
+
+    .beat-note {
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 14px 14px 15px;
+      background: rgba(255, 255, 255, 0.82);
+    }
+
+    .beat-note-label {
+      display: inline-flex;
+      margin-bottom: 8px;
+      color: var(--muted);
+      font-size: 10px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    .beat-note p {
+      margin: 0;
       font-size: 0.96rem;
       line-height: 1.7;
     }
 
-    .utility-list li::before {
-      content: "";
-      position: absolute;
-      left: 0;
-      top: 0.72em;
-      width: 8px;
-      height: 8px;
-      border-radius: 999px;
-      background: var(--blue-text);
-      transform: translateY(-50%);
+    .beat-note-strength {
+      background: rgba(225, 243, 254, 0.42);
     }
 
-    .utility-card:nth-child(2n) .utility-list li::before {
-      background: var(--green-text);
+    .beat-note-advice {
+      background: rgba(237, 243, 236, 0.55);
     }
 
-    .utility-card:nth-child(3n) .utility-list li::before {
-      background: var(--yellow-text);
-    }
-
-    .utility-card:nth-child(4n) .utility-list li::before {
-      background: var(--red-text);
+    .beat-note-risk {
+      background: rgba(251, 243, 219, 0.56);
     }
 
     .spine-feature {
@@ -1007,82 +1065,245 @@
                 </div>
               </div>
             </section>
-            <section class="utility-deck">
-              <article class="utility-card">
-                <p class="utility-kicker">For editor</p>
-                <h3>Wat absoluut beschermd moet blijven</h3>
-                <ul class="utility-list">
-                  <li><strong>Beat 1</strong> moet locatie-eerst blijven; zet niets voor de zin “We zijn in Amsterdam, Amsterdam West, in de Aker.”</li>
-                  <li><strong>Ibrahim’s grote emotionele payoff</strong> hoort pas in beat 6 echt te landen, niet eerder als hoofdreactie.</li>
-                  <li><strong>Beats 1, 6, 7 en 9</strong> zijn de draagbalken van de aflevering; trim daar pas als alle andere opties op zijn.</li>
-                </ul>
-              </article>
-              <article class="utility-card">
-                <p class="utility-kicker">For director</p>
-                <h3>Waarom deze structuur werkt</h3>
-                <ul class="utility-list">
-                  <li>De aflevering opent op <strong>plek en gedrag</strong>, niet op résumé of emotie, waardoor de kijker sneller vertrouwt wat hij ziet.</li>
-                  <li>De emotionele motor is helder: <strong>moederlijke opoffering → familietrots → blessure → hernieuwde motivatie</strong>.</li>
-                  <li>De kern van het portret is niet “carrière-overzicht”, maar <strong>zelfbeeld onder druk</strong>: weten wat je kunt, ook als systemen haperen.</li>
-                </ul>
-              </article>
-              <article class="utility-card">
-                <p class="utility-kicker">If runtime gets tight</p>
-                <h3>Waar je eerst kunt snijden</h3>
-                <ul class="utility-list">
-                  <li><strong>Beat 8</strong> is de eerste trimzone; hij kan terug richting 70 seconden zolang de laatste toekomstzin blijft staan.</li>
-                  <li><strong>Beat 10</strong> mag compacter; de dankbaarheidsclip is de meest logische tweede trim als de aflevering strakker moet.</li>
-                  <li><strong>Beat 5</strong> kan uitleg verliezen, maar het <strong>AZ-busdetail</strong> liever niet, omdat dat het hele traject tastbaar maakt.</li>
-                </ul>
-              </article>
-              <article class="utility-card">
-                <p class="utility-kicker">Structural risks</p>
-                <h3>Waar je bewust scherp op moet blijven</h3>
-                <ul class="utility-list">
-                  <li><strong>Beat 6 → 7</strong> is Pixar-logica, niet letterlijke chronologie; dat werkt, maar moet bewust gemonteerd blijven.</li>
-                  <li><strong>Beat 3</strong> komt laat uit het broninterview; de overgang moet daarom voelen als een bewuste redactionele sprong, niet als continuïteit.</li>
-                  <li><strong>Beat 11</strong> heeft een omgekeerde volgorde voor de emotionele landing; die niet terug normaliseren.</li>
-                </ul>
-              </article>
-            </section>
             <hr>
             <h2>Wie is Enes</h2>
             <p>Amsterdam West, de Aker. Marokkaanse roots, Comorese paspoort (Afrika Cup). Jeugdclubs: Blauw-Wit → Pankratius → AFC Amsterdam → AZ (12 jr, gescout) → Ajax (16 jr). Debuut Jong Ajax op <strong>13 januari 2020</strong> onder <strong>Erik ten Hag</strong>. Daarna de weg via Roma en PSV, met het WK als stip op de horizon.</p>
             <p>Zijn moeder weigerde een managementfunctie bij de ING om voor hem te zorgen. Zijn broer <strong>Ibrahim (19 jaar)</strong> is de enige testimonial-stem — hij is opmerkelijk articulaat en zit strak in zijn verhaal.</p>
             <hr>
             <h2>Wat er in de roughcut zit, beat voor beat</h2>
-            <h3>Beat 1 — Het Pleintje (0:00–1:00)</h3>
-            <p>Enes opent zichzelf op de Aker: locatie → herinnering → dag en nacht voetballen. Drie clips, naadloos aan elkaar. Dit is precies de Noa Lang-formule — je weet binnen 10 seconden wie dit is en waar je bent. <strong>Laat dit intact.</strong></p>
-            <p>De eerste zin — <em>"We zijn in Amsterdam, Amsterdam West, in de Aker"</em> — is de opener. Niets daarvoor.</p>
-            <h3>Beat 2 — Vader / Opvoeding (1:00–2:00)</h3>
-            <p>De moeder die een managementfunctie bij de ING weigerde om voor Enes te zorgen. Dit is het sterkste opvoedingsverhaal van het interview — concreet, visueel, emotioneel zonder sentimenteel te zijn. Enes zegt het eerst (~3:48), dan bevestigt Ibrahim het in de testimonial (~2:50 TESTIMONIAL) met extra detail: <em>"ze moest een keuze maken — ons of werk."</em></p>
-            <p><strong>Redactionele keuze:</strong> de vader/moeder-terminologie in het format is hier letterlijk de moeder. Dat werkt. Ibrahim als testimonial-stem hier is een bewuste vroege plaatsing — hij introduceert zichzelf impliciet als broer, zodat de kijker hem herkent als hij terugkomt in beat 6.</p>
-            <h3>Beat 3 — Grappige Anekdote (2:00–3:00)</h3>
-            <p>Enes moest als nieuwe Marokkaanse international voor de groep zingen — en koos Ems, <em>"het is een feit."</em> Zijn redenering: <em>"ik vond het bij de situatie passen, want het is toch een feit dat je dat hebt bereikt."</em> Zelfbewust, grappig, en het laat al zien dat hij bij het nationale team zit — dat is relevante context voor later.</p>
-            <p>Dit beat zit laat in het bronmateriaal (~56:17), maar het is de sterkste luchtige anekdote in het hele interview. <strong>Niet verplaatsen naar achter.</strong></p>
-            <h3>Beat 4 — Karakter (3:00–4:00)</h3>
-            <p>Vier clips die samen één portret vormen: rustig maar niet te trappen → mannetje staan naast oudere jongens → durven, scheid hebben → vriendenkring geleerd te kiezen na de blessure. De laatste clip (~20:27) is de verrassing: de blessureperiode als karakter-les. Dat slaat een brug naar beat 7 zonder het te verklappen.</p>
-            <h3>Beat 5 — Voetbaltraject (4:00–5:30)</h3>
-            <p>Vier clips, ~70 seconden, binnen de 75 sec norm. Chronologie: gescout door AZ op zijn twaalfde → Blauw-Wit/Pankratius/AFC/AZ/Ajax in één zin → AZ-jongensdroom maar cultuurshock → bus om 5 uur ochtend, thuis om 8 uur 's avonds.</p>
-            <p>Het AZ-busritme (~9:03) is het concretste moment in dit beat — dat ene detail doet meer dan drie zinnen over "het was zwaar." <strong>Bewaar dit.</strong></p>
-            <h3>Beat 6 — De Grote Doorbraak (5:30–7:00)</h3>
-            <p>Drie clips uit het hoofdinterview + één testimonial van Ibrahim. Structuur: 1. Debuut Jong Ajax 13 jan 2020 — <em>"dan doe je het toch goed"</em> 2. Het gevoel — spannend maar dan gas geven 3. Erik ten Hag expliciet bedankt — <em>"die heeft mij mijn debuut laten maken bij Ajax, daar ben ik hem super dankbaar voor"</em> 4. Ibrahim (TESTIMONIAL ~14:06) — <em>"toen Enes zijn debuut in Ajax 1 maakte, waren wij als gezin heel trots"</em></p>
-            <p>De familielid-reactie staat hier voor het eerst. De kijker kent Enes nu 5+ minuten — de trots van Ibrahim landt daardoor.</p>
-            <p><strong>Let op:</strong> het hoofdinterview heeft ook een Ajax 1-moment (~26:34, contractverlenging). Dat zit al in clip 3 van dit beat. Als je de cut inkort, houd dan minimaal clips 1 en 4 (debuut + Ibrahim).</p>
-            <h3>Beat 7 — De Prijs van het Succes (7:00–8:00)</h3>
-            <p>De blessure op 18/19-jarige leeftijd, midden in corona. Vier clips die samen één concreet beeld bouwen: <em>"net op het moment dat ik debuut mocht maken"</em> → corona bovenop de blessure → <em>"rolstoel en krukken"</em> → <em>"ik kon niet eens lopen."</em></p>
-            <p>Het woord "rolstoel" (~19:27) is de sterkste zin in dit beat. Eén concrete zin, en je ziet het voor je. Precies wat de template vraagt.</p>
-            <p><strong>Pas op:</strong> er zit een kleine tijdspronglogica in de clips (beat 6 is 13 jan 2020, beat 7 is <em>vóór</em> het debuut want het was op 18/19 jaar). De roughcut veronderstelt dat de editor weet dat de blessure deels vóór het debuut lag en deels erna. Als je dit wil verduidelijken, kan je beat 7 direct na beat 5 plaatsen — maar dan verlies je de emotionele doorstroom van beat 6 → 7. <strong>Laat de volgorde zoals die is.</strong></p>
-            <h3>Beat 8 — De Huidige Uitdaging (8:00–9:30)</h3>
-            <p>Roma-trainer gesprek → moeilijke zomer (15 clubs) → keuze voor PSV → WK onzeker, toekomst open. Drie clips, ~85 sec — net onder de 90 sec grens.</p>
-            <p>De slotclip (~46:04) is de scharnier: <em>"ik weet nog niet wat er volgend seizoen gaat gebeuren."</em> Dat is het onopgeloste einde dat het format vereist. <strong>Niet inkorten ten koste van deze clip.</strong></p>
-            <h3>Beat 9 — De Kernquote (9:30–10:30)</h3>
-            <p><em>"Mijn droom was eigenlijk helemaal niet veranderd. Ik had juist meer motivatie. Ik weet wat ik zelf kan. Als zij dat niet toelaat dat ik het laat zien daar, dan laat ik het heel graag bij iemand anders zien."</em></p>
-            <p>Eén clip, 26 seconden. Universeel, krachtig, werkt als stand-alone. Dit is ook de kandidaat voor de thumbnail-tekst. De zin <em>"ik weet wat ik zelf kan"</em> is de kerngedachte van het hele verhaal.</p>
-            <h3>Beat 10 — Dromen (10:30–11:30)</h3>
-            <p>WK voor Marokko → Champions League → dankbaar stil staan bij wat je hebt bereikt. De derde clip (~54:10) is de niet-sportdroom: <em>"je hebt nooit tijd om dankbaar te zijn, je gaat altijd door."</em> Dat is menselijk en herkenbaar voorbij voetbal.</p>
-            <h3>Beat 11 — Terug op het Pleintje (11:30–einde)</h3>
-            <p>Let op de volgorde: eerst <em>"daarvoor doe je het"</em> (~57:32) — dat is een reactie op zijn moeders boodschap, kort en emotioneel — dan de slotzin (~57:52) waarin hij zijn verhaal samenvat. Die volgorde is bewust omgekeerd ten opzichte van het interview. <strong>Niet terugdraaien.</strong></p>
+            <div class="beat-grid">
+              <article class="beat-card">
+                <div class="beat-head">
+                  <div>
+                    <p class="beat-kicker">Beat 1</p>
+                    <h3 class="beat-title">Het Pleintje</h3>
+                    <p class="beat-range">0:00-1:00</p>
+                  </div>
+                  <span class="beat-badge">Opening</span>
+                </div>
+                <p class="beat-summary">Enes opent zichzelf op de Aker: locatie → herinnering → dag en nacht voetballen. Drie clips, naadloos aan elkaar. Dit is precies de Noa Lang-formule — je weet binnen 10 seconden wie dit is en waar je bent.</p>
+                <div class="beat-notes">
+                  <div class="beat-note beat-note-strength">
+                    <span class="beat-note-label">Sterk omdat</span>
+                    <p>De eerste zin — <em>"We zijn in Amsterdam, Amsterdam West, in de Aker"</em> — zet meteen plek, identiteit en geloofwaardigheid neer.</p>
+                  </div>
+                  <div class="beat-note beat-note-advice">
+                    <span class="beat-note-label">Advies</span>
+                    <p>Laat dit intact. Zet niets voor de opener en probeer het begin niet “mooier” of emotioneler te maken.</p>
+                  </div>
+                </div>
+              </article>
+              <article class="beat-card">
+                <div class="beat-head">
+                  <div>
+                    <p class="beat-kicker">Beat 2</p>
+                    <h3 class="beat-title">Vader / Opvoeding</h3>
+                    <p class="beat-range">1:00-2:00</p>
+                  </div>
+                  <span class="beat-badge">Fundament</span>
+                </div>
+                <p class="beat-summary">De moeder die een managementfunctie bij de ING weigerde om voor Enes te zorgen. Dit is het sterkste opvoedingsverhaal van het interview — concreet, visueel, emotioneel zonder sentimenteel te zijn. Enes zegt het eerst, daarna bevestigt Ibrahim het met extra detail.</p>
+                <div class="beat-notes">
+                  <div class="beat-note beat-note-strength">
+                    <span class="beat-note-label">Sterk omdat</span>
+                    <p>Het ING-detail is tekenbaar. Je ziet letterlijk wat er werd opgegeven; dat werkt veel sterker dan een algemene zin over steun van thuis.</p>
+                  </div>
+                  <div class="beat-note beat-note-advice">
+                    <span class="beat-note-label">Advies</span>
+                    <p>Gebruik Ibrahim hier als bevestiging, niet als hoofdclimax. Zijn grote emotionele payoff hoort pas echt te landen in beat 6.</p>
+                  </div>
+                </div>
+              </article>
+              <article class="beat-card">
+                <div class="beat-head">
+                  <div>
+                    <p class="beat-kicker">Beat 3</p>
+                    <h3 class="beat-title">Grappige Anekdote</h3>
+                    <p class="beat-range">2:00-3:00</p>
+                  </div>
+                  <span class="beat-badge">Adempauze</span>
+                </div>
+                <p class="beat-summary">Enes moest als nieuwe Marokkaanse international voor de groep zingen — en koos Ems, <em>"het is een feit."</em> Zelfbewust, grappig, en tegelijk relevante context voor later in het verhaal.</p>
+                <div class="beat-notes">
+                  <div class="beat-note beat-note-strength">
+                    <span class="beat-note-label">Sterk omdat</span>
+                    <p>Dit is de lichtste, meest charmante anekdote in het materiaal én hij vertelt meteen iets over zijn positie bij Marokko.</p>
+                  </div>
+                  <div class="beat-note beat-note-advice">
+                    <span class="beat-note-label">Advies</span>
+                    <p>Niet naar achter schuiven. De clip komt laat uit het broninterview, dus laat de sprong bewust redactioneel voelen in plaats van chronologisch glad.</p>
+                  </div>
+                </div>
+              </article>
+              <article class="beat-card">
+                <div class="beat-head">
+                  <div>
+                    <p class="beat-kicker">Beat 4</p>
+                    <h3 class="beat-title">Karakter</h3>
+                    <p class="beat-range">3:00-4:00</p>
+                  </div>
+                  <span class="beat-badge">Portret</span>
+                </div>
+                <p class="beat-summary">Vier clips vormen samen één portret: rustig maar niet te trappen, mannetje staan naast oudere jongens, durven, en uiteindelijk de les van de blessureperiode over vriendschap en kring.</p>
+                <div class="beat-notes">
+                  <div class="beat-note beat-note-strength">
+                    <span class="beat-note-label">Sterk omdat</span>
+                    <p>Dit maakt van Enes een mens vóór voetballer. De laatste clip verrast en geeft het karakter een volwassen laag.</p>
+                  </div>
+                  <div class="beat-note beat-note-advice">
+                    <span class="beat-note-label">Advies</span>
+                    <p>Laat de vriendenkring-clip staan; die is inhoudelijk ook de brug naar beat 7 zonder dat hij de blessure al volledig verklapt.</p>
+                  </div>
+                </div>
+              </article>
+              <article class="beat-card">
+                <div class="beat-head">
+                  <div>
+                    <p class="beat-kicker">Beat 5</p>
+                    <h3 class="beat-title">Voetbaltraject</h3>
+                    <p class="beat-range">4:00-5:30</p>
+                  </div>
+                  <span class="beat-badge">Context</span>
+                </div>
+                <p class="beat-summary">Vier clips, ongeveer 70 seconden, binnen de norm. Chronologie: gescout door AZ → clubs in één beweging → cultuurshock → bus om 5 uur ochtend, thuis om 8 uur 's avonds.</p>
+                <div class="beat-notes">
+                  <div class="beat-note beat-note-strength">
+                    <span class="beat-note-label">Sterk omdat</span>
+                    <p>Het AZ-busritme is het meest tastbare detail van zijn traject; dat ene beeld doet meer dan drie zinnen uitleg over hoe zwaar het was.</p>
+                  </div>
+                  <div class="beat-note beat-note-advice">
+                    <span class="beat-note-label">Advies</span>
+                    <p>Als deze beat korter moet, snijd dan eerst uitleg. Houd het busmoment liever overeind en blijf onder ongeveer 75 seconden.</p>
+                  </div>
+                </div>
+              </article>
+              <article class="beat-card">
+                <div class="beat-head">
+                  <div>
+                    <p class="beat-kicker">Beat 6</p>
+                    <h3 class="beat-title">De Grote Doorbraak</h3>
+                    <p class="beat-range">5:30-7:00</p>
+                  </div>
+                  <span class="beat-badge">Piek</span>
+                </div>
+                <p class="beat-summary">Drie clips uit het hoofdinterview plus één testimonial van Ibrahim: debuut Jong Ajax, het gevoel van spanning, Erik ten Hag expliciet bedankt, en daarna pas familietrots.</p>
+                <div class="beat-notes">
+                  <div class="beat-note beat-note-strength">
+                    <span class="beat-note-label">Sterk omdat</span>
+                    <p>De kijker kent Enes nu lang genoeg om Ibrahim’s trots te laten landen als echte payoff in plaats van als losse informatie.</p>
+                  </div>
+                  <div class="beat-note beat-note-advice">
+                    <span class="beat-note-label">Advies</span>
+                    <p>Als je moet inkorten, houd minimaal clip 1 en Ibrahim overeind. Dit is de eerste grote emotionele piek van de aflevering.</p>
+                  </div>
+                </div>
+              </article>
+              <article class="beat-card">
+                <div class="beat-head">
+                  <div>
+                    <p class="beat-kicker">Beat 7</p>
+                    <h3 class="beat-title">De Prijs van het Succes</h3>
+                    <p class="beat-range">7:00-8:00</p>
+                  </div>
+                  <span class="beat-badge">Gewicht</span>
+                </div>
+                <p class="beat-summary">De blessure op 18/19-jarige leeftijd, midden in corona. Vier clips bouwen één concreet beeld: verwachte doorbraak, corona erbovenop, rolstoel en krukken, en de vraag of hij ooit nog kon voetballen.</p>
+                <div class="beat-notes">
+                  <div class="beat-note beat-note-strength">
+                    <span class="beat-note-label">Sterk omdat</span>
+                    <p>Het woord <em>"rolstoel"</em> geeft de aflevering een hard, tastbaar beeld. Dat maakt de eerdere droom en latere motivatie geloofwaardig.</p>
+                  </div>
+                  <div class="beat-note beat-note-risk">
+                    <span class="beat-note-label">Advies</span>
+                    <p>De volgorde 6 → 7 volgt Pixar-logica, niet strikte chronologie. Laat dat bewust zo, tenzij je expliciet een extra voice-over wilt inzetten om de tijdsprong te duiden.</p>
+                  </div>
+                </div>
+              </article>
+              <article class="beat-card">
+                <div class="beat-head">
+                  <div>
+                    <p class="beat-kicker">Beat 8</p>
+                    <h3 class="beat-title">De Huidige Uitdaging</h3>
+                    <p class="beat-range">8:00-9:30</p>
+                  </div>
+                  <span class="beat-badge">Gevarenzone</span>
+                </div>
+                <p class="beat-summary">Roma-trainer gesprek → moeilijke zomer met 15 clubs → keuze voor PSV → WK onzeker, toekomst open. Drie clips, ongeveer 85 seconden.</p>
+                <div class="beat-notes">
+                  <div class="beat-note beat-note-strength">
+                    <span class="beat-note-label">Sterk omdat</span>
+                    <p>De slotclip — <em>"ik weet nog niet wat er volgend seizoen gaat gebeuren"</em> — houdt de aflevering open en actueel.</p>
+                  </div>
+                  <div class="beat-note beat-note-advice">
+                    <span class="beat-note-label">Advies</span>
+                    <p>Dit is de eerste trimzone als de runtime omlaag moet. Je kunt terug richting 70 seconden, maar niet ten koste van de laatste toekomstzin.</p>
+                  </div>
+                </div>
+              </article>
+              <article class="beat-card">
+                <div class="beat-head">
+                  <div>
+                    <p class="beat-kicker">Beat 9</p>
+                    <h3 class="beat-title">De Kernquote</h3>
+                    <p class="beat-range">9:30-10:30</p>
+                  </div>
+                  <span class="beat-badge">Essentie</span>
+                </div>
+                <p class="beat-summary"><em>"Mijn droom was eigenlijk helemaal niet veranderd. Ik had juist meer motivatie. Ik weet wat ik zelf kan."</em> Eén clip, 26 seconden, die het hele verhaal samenvat.</p>
+                <div class="beat-notes">
+                  <div class="beat-note beat-note-strength">
+                    <span class="beat-note-label">Sterk omdat</span>
+                    <p>Deze zin draagt de hele aflevering: niet alleen ambitie, maar zelfbeeld onder druk. Daarom werkt hij ook los als stand-alone clip.</p>
+                  </div>
+                  <div class="beat-note beat-note-advice">
+                    <span class="beat-note-label">Advies</span>
+                    <p>Beschermen voor teaser, social en thumbnail-denken. Dit is de kerngedachte van het hele portret.</p>
+                  </div>
+                </div>
+              </article>
+              <article class="beat-card">
+                <div class="beat-head">
+                  <div>
+                    <p class="beat-kicker">Beat 10</p>
+                    <h3 class="beat-title">Dromen</h3>
+                    <p class="beat-range">10:30-11:30</p>
+                  </div>
+                  <span class="beat-badge">Reikwijdte</span>
+                </div>
+                <p class="beat-summary">WK voor Marokko → Champions League → dankbaar stilstaan bij wat je hebt bereikt. Het verbreedt de aflevering van carrièrestap naar innerlijke houding.</p>
+                <div class="beat-notes">
+                  <div class="beat-note beat-note-strength">
+                    <span class="beat-note-label">Sterk omdat</span>
+                    <p>De dankbaarheidsclip trekt het verhaal even weg van pure carrière en laat zien hoe Enes naar zijn eigen leven kijkt.</p>
+                  </div>
+                  <div class="beat-note beat-note-advice">
+                    <span class="beat-note-label">Advies</span>
+                    <p>Als de film compacter moet, is de dankbaarheidsclip de logischste tweede trim na beat 8.</p>
+                  </div>
+                </div>
+              </article>
+              <article class="beat-card">
+                <div class="beat-head">
+                  <div>
+                    <p class="beat-kicker">Beat 11</p>
+                    <h3 class="beat-title">Terug op het Pleintje</h3>
+                    <p class="beat-range">11:30-einde</p>
+                  </div>
+                  <span class="beat-badge">Landing</span>
+                </div>
+                <p class="beat-summary">Eerst <em>"daarvoor doe je het"</em>, dan pas de samenvattende slotzin. Kort, rond en emotioneel zuiver, zonder uit te waaieren in een lange outro.</p>
+                <div class="beat-notes">
+                  <div class="beat-note beat-note-strength">
+                    <span class="beat-note-label">Sterk omdat</span>
+                    <p>De aflevering sluit de cirkel zonder speech. De emotie zit in de volgorde, niet in extra uitleg.</p>
+                  </div>
+                  <div class="beat-note beat-note-risk">
+                    <span class="beat-note-label">Advies</span>
+                    <p>Niet terugdraaien. De huidige omgekeerde volgorde landt beter dan de volgorde uit het broninterview.</p>
+                  </div>
+                </div>
+              </article>
+            </div>
             <hr>
             <h2>Wat er in het materiaal zit maar niet in de roughcut</h2>
             <h3>Hoofdinterview — potentieel alternatief / verdieping</h3>
@@ -1116,87 +1337,6 @@
             <p><strong>Beat 3 tijdstip:</strong> de zingclips liggen op ~56:17 in het hoofdinterview — vlak voor het einde. In de roughcut zitten ze op positie 3 (2:00–3:00). Dat vraagt om een harde cut. Zorg dat de editor weet dat dit geen continuïteit-snede is maar een bewuste structuurgreep.</p>
             <p><strong>Ibrahim in beat 2 vs beat 6:</strong> Ibrahim verschijnt twee keer. Eerste keer anoniem (kijker weet nog niet wie hij is), tweede keer als gezinsreactie op het debuut. Als je bij beat 2 zijn naam wil introduceren, kan dat — maar het hoeft niet.</p>
             <p><strong>Lengte:</strong> 11:47 zit in de groene zone (10-13 min). Beat 8 is het meest kwetsbaar bij inkorten — dat kan terug naar 70 sec als het moet, maar niet verder.</p>
-            <hr>
-            <h2>Beat Decision Grid</h2>
-            <p class="report-kicker">Snelle scan voor editor en regisseur: wat doet elk beat, waarom won het fragment, en wat is de werkafspraak in de cut.</p>
-            <table class="report-table">
-              <thead>
-                <tr>
-                  <th>Beat</th>
-                  <th>Functie</th>
-                  <th>Waarom dit fragment won</th>
-                  <th>Werkafspraak</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td><strong>1</strong><br>Het Pleintje</td>
-                  <td>Oriëntatie en vertrouwen</td>
-                  <td>Exacte plek + concrete jeugdactie geven de sterkste retention-opening.</td>
-                  <td>Openzin intact laten en niets ervoor zetten.</td>
-                </tr>
-                <tr>
-                  <td><strong>2</strong><br>Opvoeding</td>
-                  <td>Gezinsoffer zichtbaar maken</td>
-                  <td>Het ING-detail is tekenbaar en veel sterker dan algemene ouder-uitleg.</td>
-                  <td>Ibrahim hier alleen als bevestiging gebruiken, niet als hoofdclimax.</td>
-                </tr>
-                <tr>
-                  <td><strong>3</strong><br>Anekdote</td>
-                  <td>Adempauze en charme</td>
-                  <td>Beste lichte moment, en tegelijk nuttige context voor Marokko.</td>
-                  <td>Mag hard binnenkomen; niet chronologisch proberen glad te strijken.</td>
-                </tr>
-                <tr>
-                  <td><strong>4</strong><br>Karakter</td>
-                  <td>Mens vóór voetballer</td>
-                  <td>Gedrag + blessureles bouwen een portret, geen bio-samenvatting.</td>
-                  <td>Laat de vriendenkring-clip staan als brug naar beat 7.</td>
-                </tr>
-                <tr>
-                  <td><strong>5</strong><br>Traject</td>
-                  <td>Context zonder vertraging</td>
-                  <td>Het busdetail draagt het gewicht sneller dan extra clubuitleg.</td>
-                  <td>Onder 75 sec houden; eerst uitleg snijden, niet het busmoment.</td>
-                </tr>
-                <tr>
-                  <td><strong>6</strong><br>Doorbraak</td>
-                  <td>Eerste echte piek</td>
-                  <td>Debuut + familietrots geven samen payoff én emotionele schaal.</td>
-                  <td>Ibrahim hier voor het eerst vol laten landen.</td>
-                </tr>
-                <tr>
-                  <td><strong>7</strong><br>Prijs</td>
-                  <td>Geloofwaardigheid van de droom</td>
-                  <td>“Rolstoel” is het concrete beeld dat de aflevering gewicht geeft.</td>
-                  <td>Niet verzachten; dit is de prijs die de kijker moet voelen.</td>
-                </tr>
-                <tr>
-                  <td><strong>8</strong><br>Uitdaging</td>
-                  <td>Onopgelost probleem in het nu</td>
-                  <td>Roma/PSV/WK maakt de toekomst urgent en nog niet opgelost.</td>
-                  <td>Eerste trimzone bij runtimedruk, maar slotzin altijd bewaren.</td>
-                </tr>
-                <tr>
-                  <td><strong>9</strong><br>Kernquote</td>
-                  <td>Samenvatting van het verhaal</td>
-                  <td>Universele zelfovertuiging, sterk genoeg als standalone clip.</td>
-                  <td>Beschermen voor teaser, thumbnailtekst en social cutdown.</td>
-                </tr>
-                <tr>
-                  <td><strong>10</strong><br>Dromen</td>
-                  <td>Reikwijdte van de ambitie</td>
-                  <td>Sportdroom plus dankbaarheid verbreden de mens achter de speler.</td>
-                  <td>Dankbaarheidsclip is optioneel als de film korter moet.</td>
-                </tr>
-                <tr>
-                  <td><strong>11</strong><br>Terug op het Pleintje</td>
-                  <td>Cirkel sluiten</td>
-                  <td>Korte terugkeer naar het pleintje geeft rust na het open einde.</td>
-                  <td>Volgorde niet normaliseren; “Daarvoor doe je het” eerst laten komen.</td>
-                </tr>
-              </tbody>
-            </table>
             <hr>
             <p class="report-kicker">Roughcut gegenereerd door Ben's Editbot op basis van 61 min hoofdinterview + 25 min testimonials.</p>
             <p class="report-kicker">XML: <code>roughcuts/pleintje_afl1_20260505_142807.xml</code></p>
