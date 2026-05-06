@@ -742,16 +742,20 @@
     .transcript-section {
       position: relative;
       border-top: 1px solid var(--border);
-      padding-top: 32px;
-      margin-top: 32px;
+      padding: 32px 20px 24px;
+      margin: 0 -20px;
       scroll-margin-top: 28px;
     }
 
     .transcript-section:first-of-type {
       border-top: 0;
-      margin-top: 0;
       padding-top: 0;
     }
+
+    .transcript-section:nth-of-type(4n+1) { background: rgba(225, 243, 254, 0.22); }
+    .transcript-section:nth-of-type(4n+2) { background: rgba(237, 243, 236, 0.26); }
+    .transcript-section:nth-of-type(4n+3) { background: rgba(251, 243, 219, 0.28); }
+    .transcript-section:nth-of-type(4n+0) { background: rgba(253, 235, 236, 0.24); }
 
     .section-meta {
       display: flex;
@@ -833,10 +837,16 @@
     .clip-card {
       border: 1px solid var(--border);
       border-radius: 12px;
-      background: var(--surface-solid);
+      background: rgba(255, 255, 255, 0.72);
+      backdrop-filter: blur(6px);
       padding: 18px 18px 20px;
       transition: transform 200ms ease, box-shadow 200ms ease;
     }
+
+    .transcript-section:nth-of-type(4n+1) .clip-card { border-color: rgba(31, 108, 159, 0.12); }
+    .transcript-section:nth-of-type(4n+2) .clip-card { border-color: rgba(52, 101, 56, 0.12); }
+    .transcript-section:nth-of-type(4n+3) .clip-card { border-color: rgba(149, 100, 0, 0.12); }
+    .transcript-section:nth-of-type(4n+0) .clip-card { border-color: rgba(159, 47, 45, 0.12); }
 
     .clip-card:hover {
       transform: translateY(-1px);
@@ -1029,7 +1039,7 @@
           <section class="content-panel active" id="panel-deep-dive" role="tabpanel" aria-labelledby="tab-deep-dive">
             <p class="eyebrow">Editorial brief</p>
             <h1>Edit Brief — Het Pleintje Van, Aflevering 1: Enes</h1>
-            <p class="report-kicker">Gegenereerd op basis van roughcut <code>pleintje_afl1_20260505_142807</code> · 33 clips · 11:47</p>
+            <p class="report-kicker">Gegenereerd op basis van roughcut <code>pleintje_afl1_20260505_142807</code> · 32 clips · 12:58</p>
             <section class="spine-feature">
               <div class="spine-feature-head">
                 <div>
@@ -1336,7 +1346,7 @@
             <p><strong>Tijdslogica beat 6 → beat 7:</strong> de blessure (~18 jr) lag gedeeltelijk <em>vóór</em> het debuut (13 jan 2020). Het interview vertelt het andersom. De roughcut volgt de Pixar-logica (doorbraak → prijs), niet de chronologie. Dat is de juiste keuze — maar als Enes of de redactie dit wil rechtzetten, kan je een korte tussenzin als voice-over overwegen.</p>
             <p><strong>Beat 3 tijdstip:</strong> de zingclips liggen op ~56:17 in het hoofdinterview — vlak voor het einde. In de roughcut zitten ze op positie 3 (2:00–3:00). Dat vraagt om een harde cut. Zorg dat de editor weet dat dit geen continuïteit-snede is maar een bewuste structuurgreep.</p>
             <p><strong>Ibrahim in beat 2 vs beat 6:</strong> Ibrahim verschijnt twee keer. Eerste keer anoniem (kijker weet nog niet wie hij is), tweede keer als gezinsreactie op het debuut. Als je bij beat 2 zijn naam wil introduceren, kan dat — maar het hoeft niet.</p>
-            <p><strong>Lengte:</strong> 11:47 zit in de groene zone (10-13 min). Beat 8 is het meest kwetsbaar bij inkorten — dat kan terug naar 70 sec als het moet, maar niet verder.</p>
+            <p><strong>Lengte:</strong> 12:58 zit in de groene zone (10-13 min). Beat 8 is het meest kwetsbaar bij inkorten — dat kan terug naar 70 sec als het moet, maar niet verder.</p>
             <hr>
             <p class="report-kicker">Roughcut gegenereerd door Ben's Editbot op basis van 61 min hoofdinterview + 25 min testimonials.</p>
             <p class="report-kicker">XML: <code>roughcuts/pleintje_afl1_20260505_142807.xml</code></p>
@@ -1352,7 +1362,7 @@
                 <div class="pill-row">
                   <span class="pill"><b>11</b> beats gebruikt</span>
                   <span class="pill"><b>33</b> geselecteerde clips</span>
-                  <span class="pill"><b>11:47</b> totale duur</span>
+                  <span class="pill"><b>12:58</b> totale duur</span>
                 </div>
               </div>
               <div class="transcript-card">
