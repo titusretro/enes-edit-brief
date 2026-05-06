@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE xmeml>
 <xmeml version="5">
-  <sequence id="sequence-ab55f10d-148a-416f-af36-f5c2a1f66373">
-    <uuid>ab55f10d-148a-416f-af36-f5c2a1f66373</uuid>
-    <name>HOOFDINTERVIEW 20260506-101540</name>
-    <duration>1405</duration>
+  <sequence id="sequence-7733c865-1dc7-4641-9ed5-c73a564919d9">
+    <uuid>7733c865-1dc7-4641-9ed5-c73a564919d9</uuid>
+    <name>HOOFDINTERVIEW 20260506-150340</name>
+    <duration>1534</duration>
     <rate>
       <timebase>25</timebase>
       <ntsc>FALSE</ntsc>
     </rate>
     <in>0</in>
-    <out>1405</out>
+    <out>1534</out>
     <timecode>
       <rate>
         <timebase>25</timebase>
@@ -38,10 +38,10 @@
           <clipitem id="clipitem-video-1">
             <name>HOOFDINTERVIEW</name>
             <enabled>TRUE</enabled>
-            <duration>1405</duration>
+            <duration>1534</duration>
             <start>0</start>
-            <end>1405</end>
-            <in>27771</in>
+            <end>1534</end>
+            <in>27642</in>
             <out>29176</out>
             <file id="file-r51cbdcc5279a132e3486ccdd8d46b121">
               <name>HOOFDINTERVIEW.mp3</name>
@@ -113,10 +113,10 @@
           <clipitem id="clipitem-audio-1">
             <name>HOOFDINTERVIEW</name>
             <enabled>TRUE</enabled>
-            <duration>1405</duration>
+            <duration>1534</duration>
             <start>0</start>
-            <end>1405</end>
-            <in>27771</in>
+            <end>1534</end>
+            <in>27642</in>
             <out>29176</out>
             <file id="file-r51cbdcc5279a132e3486ccdd8d46b121">
               <name>HOOFDINTERVIEW.mp3</name>
