@@ -923,6 +923,263 @@
         white-space: normal;
       }
     }
+
+    /* ── Viral Shorts tab ───────────────────────────────────────── */
+    .viral-loading {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 14px;
+      padding: 80px 0;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .viral-loading-spinner {
+      width: 28px;
+      height: 28px;
+      border: 2px solid var(--border);
+      border-top-color: var(--blue-text);
+      border-radius: 50%;
+      animation: spin 0.9s linear infinite;
+    }
+
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    .viral-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 28px;
+      margin-top: 8px;
+    }
+
+    .viral-card {
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      background: var(--surface-solid);
+      overflow: hidden;
+    }
+
+    .viral-card-head {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      padding: 20px 24px 16px;
+      border-bottom: 1px solid var(--border);
+      background: var(--bg-soft);
+    }
+
+    .viral-rank {
+      font-family: "Geist Mono", monospace;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--muted);
+      min-width: 32px;
+    }
+
+    .viral-rank-1 { color: #b45309; }
+    .viral-rank-2 { color: #6b7280; }
+    .viral-rank-3 { color: #92400e; }
+
+    .viral-label-block { flex: 1; }
+
+    .viral-label {
+      font-size: 1.05rem;
+      font-weight: 600;
+      margin: 0 0 4px;
+    }
+
+    .viral-timecode {
+      font-family: "Geist Mono", monospace;
+      font-size: 0.78rem;
+      color: var(--muted);
+    }
+
+    .viral-grade {
+      font-size: 0.82rem;
+      font-weight: 600;
+      padding: 5px 12px;
+      border-radius: 999px;
+      white-space: nowrap;
+    }
+
+    .grade-viral  { background: #fef3c7; color: #92400e; }
+    .grade-strong { background: var(--blue-bg); color: var(--blue-text); }
+    .grade-decent { background: var(--green-bg); color: var(--green-text); }
+    .grade-weak   { background: var(--border); color: var(--muted); }
+
+    .viral-card-body {
+      padding: 20px 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+
+    .viral-scores {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 8px;
+    }
+
+    .viral-score-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .viral-score-bar-wrap {
+      width: 100%;
+      height: 4px;
+      background: var(--border);
+      border-radius: 2px;
+      overflow: hidden;
+    }
+
+    .viral-score-bar {
+      height: 100%;
+      border-radius: 2px;
+      background: var(--blue-text);
+      transition: width 0.4s ease;
+    }
+
+    .viral-score-val {
+      font-family: "Geist Mono", monospace;
+      font-size: 1rem;
+      font-weight: 700;
+    }
+
+    .viral-score-lbl {
+      font-size: 0.67rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--muted);
+      text-align: center;
+    }
+
+    .viral-total {
+      font-family: "Geist Mono", monospace;
+      font-size: 1.8rem;
+      font-weight: 700;
+      text-align: right;
+      color: var(--text);
+    }
+
+    .viral-total span {
+      font-size: 1rem;
+      color: var(--muted);
+    }
+
+    .viral-quote {
+      font-family: "Newsreader", "Instrument Serif", serif;
+      font-size: 1.15rem;
+      font-style: italic;
+      line-height: 1.55;
+      color: var(--text);
+      border-left: 3px solid var(--blue-bg);
+      padding-left: 16px;
+      margin: 0;
+    }
+
+    .viral-reason {
+      font-size: 0.92rem;
+      color: var(--muted);
+      margin: 0;
+    }
+
+    .viral-titles {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .viral-title-row {
+      display: flex;
+      gap: 10px;
+      align-items: baseline;
+    }
+
+    .viral-title-type {
+      font-size: 0.68rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--muted);
+      min-width: 96px;
+    }
+
+    .viral-title-text {
+      font-size: 0.92rem;
+      color: var(--text);
+    }
+
+    .viral-onscreen {
+      display: flex;
+      gap: 12px;
+    }
+
+    .viral-onscreen-item {
+      flex: 1;
+      background: var(--bg-soft);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 12px 14px;
+    }
+
+    .viral-onscreen-label {
+      font-size: 0.68rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 4px;
+    }
+
+    .viral-onscreen-text {
+      font-size: 0.92rem;
+      font-weight: 600;
+      color: var(--text);
+    }
+
+    .viral-flag {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.8rem;
+      color: #92400e;
+      background: #fef3c7;
+      border-radius: 6px;
+      padding: 4px 10px;
+    }
+
+    .viral-card-foot {
+      padding: 16px 24px;
+      border-top: 1px solid var(--border);
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    .btn-download {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 18px;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      background: var(--surface-solid);
+      color: var(--text);
+      font-size: 0.88rem;
+      font-weight: 500;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background 120ms ease, box-shadow 120ms ease;
+    }
+
+    .btn-download:hover {
+      background: var(--bg-soft);
+      box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+    }
   </style>
 </head>
 <body>
@@ -969,6 +1226,10 @@
               <button class="tab-button" role="tab" aria-selected="false" aria-controls="panel-full-transcript" id="tab-full-transcript" data-tab-target="panel-full-transcript">
                 <span class="tab-title">Full Transcript</span>
                 <span class="tab-copy">De volledige edit van Ben's Editbot, opgesplitst per beat en verankerd aan de spine.</span>
+              </button>
+              <button class="tab-button" role="tab" aria-selected="false" aria-controls="panel-viral-shorts" id="tab-viral-shorts" data-tab-target="panel-viral-shorts">
+                <span class="tab-title">Viral Shorts</span>
+                <span class="tab-copy">Top 5 standalone clips gescoord op hook, emotie, quotability en narrative arc.</span>
               </button>
             </div>
           </div>
@@ -1678,6 +1939,17 @@
                 </article>
               </div>
             </section>
+          </section>
+
+          <section class="content-panel" id="panel-viral-shorts" role="tabpanel" aria-labelledby="tab-viral-shorts">
+            <h1 class="report-title">Viral Shorts</h1>
+            <p class="report-kicker">Top 5 standalone clips gescoord op hook · emotie · standalone · quotability · narrative arc · max 50 punten</p>
+            <div id="viral-content">
+              <div class="viral-loading">
+                <div class="viral-loading-spinner"></div>
+                <p>Analyse loopt op de achtergrond — resultaten verschijnen hier zodra de scoring klaar is.</p>
+              </div>
+            </div>
           </section>
         </main>
       </div>
