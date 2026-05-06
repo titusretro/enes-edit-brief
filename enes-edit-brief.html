@@ -649,15 +649,23 @@
 
     .spine-story-row {
       display: grid;
-      grid-template-columns: 150px minmax(0, 1fr);
+      grid-template-columns: 150px minmax(0, 1fr) auto;
       gap: 18px;
       align-items: start;
       padding: 14px 0;
       border-bottom: 1px solid var(--border);
+      color: inherit;
+      text-decoration: none;
+      transition: background 180ms ease, transform 180ms ease;
     }
 
     .spine-story-row:last-child {
       border-bottom: 0;
+    }
+
+    .spine-story-row:hover {
+      background: rgba(249, 249, 248, 0.9);
+      transform: translateY(-1px);
     }
 
     .spine-story-label {
@@ -695,6 +703,15 @@
       letter-spacing: -0.01em;
     }
 
+    .spine-story-jump {
+      align-self: center;
+      color: var(--muted);
+      font-size: 0.72rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+
     .transcript-intro {
       display: grid;
       grid-template-columns: 1.15fr 0.85fr;
@@ -711,6 +728,10 @@
 
     .transcript-card h3 {
       margin-top: 0;
+    }
+
+    .transcript-card-standalone {
+      margin-bottom: 18px;
     }
 
     .pill-row {
@@ -1167,6 +1188,15 @@
         grid-template-columns: 1fr;
       }
 
+      .spine-story-row {
+        grid-template-columns: 1fr;
+        gap: 10px;
+      }
+
+      .spine-story-jump {
+        justify-self: start;
+      }
+
       .viral-card-head,
       .viral-title-row,
       .viral-onscreen {
@@ -1230,11 +1260,11 @@
             <div class="tab-list" role="tablist" aria-label="Document views">
               <button class="tab-button" role="tab" aria-selected="true" aria-controls="panel-deep-dive" id="tab-deep-dive" data-tab-target="panel-deep-dive">
                 <span class="tab-title">Edit Brief</span>
-                <span class="tab-copy">Analyse, montagekeuzes, alternatieven en Pixar-spine.</span>
+                <span class="tab-copy">Extra duiding, montagekeuzes, risico's en redactionele toelichting.</span>
               </button>
               <button class="tab-button" role="tab" aria-selected="false" aria-controls="panel-full-transcript" id="tab-full-transcript" data-tab-target="panel-full-transcript">
                 <span class="tab-title">Full Transcript</span>
-                <span class="tab-copy">De volledige edit van Ben's Editbot, opgesplitst per beat en verankerd aan de spine.</span>
+                <span class="tab-copy">Verhaal, profiel en volledige edit per beat, direct gelinkt aan de Pixar-structuur.</span>
               </button>
               <button class="tab-button" role="tab" aria-selected="false" aria-controls="panel-viral-shorts" id="tab-viral-shorts" data-tab-target="panel-viral-shorts">
                 <span class="tab-title">Viral Shorts</span>
@@ -1309,47 +1339,7 @@
           <section class="content-panel active" id="panel-deep-dive" role="tabpanel" aria-labelledby="tab-deep-dive">
             <p class="eyebrow">Editorial brief</p>
             <h1>Edit Brief — Het Pleintje Van, Aflevering 1: Enes</h1>
-            <p class="report-kicker">Gegenereerd op basis van roughcut <code>pleintje_afl1_20260505_142807</code> · 33 clips · 11:47</p>
-            <section class="spine-feature">
-              <div class="spine-feature-head">
-                <div>
-                  <p class="spine-feature-kicker">Narrative spine</p>
-                  <h2>De Pixar Spine voor deze aflevering</h2>
-                </div>
-                <p class="spine-feature-copy">Eerst het hele verhaal in zes stappen. Zo zie je meteen wat de montage probeert te doen, nog voordat je de beats of het transcript induikt.</p>
-              </div>
-              <div class="spine-story">
-                <div class="spine-story-row">
-                  <span class="spine-story-label">Er was eens</span>
-                  <p class="spine-story-text">een jongen die dag en nacht voetbalde op de Aker in Amsterdam West.</p>
-                </div>
-                <div class="spine-story-row">
-                  <span class="spine-story-label">Elke dag</span>
-                  <p class="spine-story-text">reed een bus hem om vijf uur ochtend op en bracht hem terug om acht uur 's avonds.</p>
-                </div>
-                <div class="spine-story-row">
-                  <span class="spine-story-label">Tot op een dag</span>
-                  <p class="spine-story-text">Erik ten Hag hem zijn debuut bij Jong Ajax gaf.</p>
-                </div>
-                <div class="spine-story-row">
-                  <span class="spine-story-label">Waardoor</span>
-                  <p class="spine-story-text">zijn familie voor het eerst als gezin trots kon zijn op wat hij had bereikt.</p>
-                </div>
-                <div class="spine-story-row">
-                  <span class="spine-story-label">Tot uiteindelijk</span>
-                  <p class="spine-story-text">een blessure in corona hem in een rolstoel zette op het moment dat hij alles verwachtte.</p>
-                </div>
-                <div class="spine-story-row">
-                  <span class="spine-story-label">En sindsdien</span>
-                  <p class="spine-story-text">weet hij: <strong>mijn droom is helemaal niet veranderd. Ik had juist meer motivatie.</strong></p>
-                </div>
-              </div>
-            </section>
-            <hr>
-            <h2>Wie is Enes</h2>
-            <p>Amsterdam West, de Aker. Marokkaanse roots, Comorese paspoort (Afrika Cup). Jeugdclubs: Blauw-Wit → Pankratius → AFC Amsterdam → AZ (12 jr, gescout) → Ajax (16 jr). Debuut Jong Ajax op <strong>13 januari 2020</strong> onder <strong>Erik ten Hag</strong>. Daarna de weg via Roma en PSV, met het WK als stip op de horizon.</p>
-            <p>Zijn moeder weigerde een managementfunctie bij de ING om voor hem te zorgen. Zijn broer <strong>Ibrahim (19 jaar)</strong> is de enige testimonial-stem — hij is opmerkelijk articulaat en zit strak in zijn verhaal.</p>
-            <hr>
+            <p class="report-kicker">Gegenereerd op basis van roughcut <code>pleintje_afl1_20260505_142807</code> · 33 clips · 11:47 · Deze tab is puur voor extra duiding en montagekeuzes.</p>
             <h2>Wat er in de roughcut zit, beat voor beat</h2>
             <div class="beat-grid">
               <article class="beat-card">
@@ -1625,6 +1615,52 @@
           <section class="content-panel" id="panel-full-transcript" role="tabpanel" aria-labelledby="tab-full-transcript">
             <p class="eyebrow">Full transcript</p>
             <h1>Full Transcript — Ben's Editbot</h1>
+            <section class="spine-feature">
+              <div class="spine-feature-head">
+                <div>
+                  <p class="spine-feature-kicker">Narrative spine</p>
+                  <h2>De Pixar Spine voor deze aflevering</h2>
+                </div>
+                <p class="spine-feature-copy">Eerst het hele verhaal in zes stappen. Zo zie je meteen wat de montage probeert te doen, nog voordat je de beats of het transcript induikt.</p>
+              </div>
+              <div class="spine-story">
+                <a class="spine-story-row" href="#beat-1">
+                  <span class="spine-story-label">Er was eens</span>
+                  <p class="spine-story-text">een jongen die dag en nacht voetbalde op de Aker in Amsterdam West.</p>
+                  <span class="spine-story-jump">Bekijk beat 1</span>
+                </a>
+                <a class="spine-story-row" href="#beat-5">
+                  <span class="spine-story-label">Elke dag</span>
+                  <p class="spine-story-text">reed een bus hem om vijf uur 's ochtends op en bracht hem terug om acht uur 's avonds.</p>
+                  <span class="spine-story-jump">Bekijk beat 5</span>
+                </a>
+                <a class="spine-story-row" href="#beat-6">
+                  <span class="spine-story-label">Tot op een dag</span>
+                  <p class="spine-story-text">Erik ten Hag hem zijn debuut bij Jong Ajax gaf.</p>
+                  <span class="spine-story-jump">Bekijk beat 6</span>
+                </a>
+                <a class="spine-story-row" href="#beat-6">
+                  <span class="spine-story-label">Waardoor</span>
+                  <p class="spine-story-text">zijn familie voor het eerst als gezin trots kon zijn op wat hij had bereikt.</p>
+                  <span class="spine-story-jump">Bekijk beat 6</span>
+                </a>
+                <a class="spine-story-row" href="#beat-7">
+                  <span class="spine-story-label">Tot uiteindelijk</span>
+                  <p class="spine-story-text">een blessure in corona hem in een rolstoel zette op het moment dat hij alles verwachtte.</p>
+                  <span class="spine-story-jump">Bekijk beat 7</span>
+                </a>
+                <a class="spine-story-row" href="#beat-9">
+                  <span class="spine-story-label">En sindsdien</span>
+                  <p class="spine-story-text">weet hij: <strong>mijn droom is helemaal niet veranderd. Ik had juist meer motivatie.</strong></p>
+                  <span class="spine-story-jump">Bekijk beat 9</span>
+                </a>
+              </div>
+            </section>
+            <div class="transcript-card transcript-card-standalone">
+              <h3>Wie is Enes</h3>
+              <p>Amsterdam West, de Aker. Marokkaanse roots, Comorese paspoort (Afrika Cup). Jeugdclubs: Blauw-Wit → Pankratius → AFC Amsterdam → AZ (12 jr, gescout) → Ajax (16 jr). Debuut Jong Ajax op <strong>13 januari 2020</strong> onder <strong>Erik ten Hag</strong>. Daarna de weg via Roma en PSV, met het WK als stip op de horizon.</p>
+              <p>Zijn moeder weigerde een managementfunctie bij de ING om voor hem te zorgen. Zijn broer <strong>Ibrahim (19 jaar)</strong> is de enige testimonial-stem — hij is opmerkelijk articulaat en zit strak in zijn verhaal.</p>
+            </div>
             <div class="transcript-intro">
               <div class="transcript-card">
                 <h3>Hoe je dit leest</h3>
