@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE xmeml>
 <xmeml version="5">
-  <sequence id="sequence-945413c8-f5f5-454c-bf35-6bfd6c37a5a4">
-    <uuid>945413c8-f5f5-454c-bf35-6bfd6c37a5a4</uuid>
-    <name>HOOFDINTERVIEW 20260506-104607</name>
-    <duration>20034</duration>
+  <sequence id="sequence-d7bbf629-8e47-4453-84a6-06c861cb428d">
+    <uuid>d7bbf629-8e47-4453-84a6-06c861cb428d</uuid>
+    <name>HOOFDINTERVIEW 20260506-112118</name>
+    <duration>19998</duration>
     <rate>
       <timebase>25</timebase>
       <ntsc>FALSE</ntsc>
     </rate>
     <in>0</in>
-    <out>20034</out>
+    <out>19998</out>
     <timecode>
       <rate>
         <timebase>25</timebase>
@@ -742,10 +742,10 @@
           <clipitem id="clipitem-video-12">
             <name>HOOFDINTERVIEW</name>
             <enabled>TRUE</enabled>
-            <duration>849</duration>
+            <duration>813</duration>
             <start>5917</start>
-            <end>6766</end>
-            <in>2297</in>
+            <end>6730</end>
+            <in>2333</in>
             <out>3146</out>
             <file id="file-r51cbdcc5279a132e3486ccdd8d46b121">
               <name>HOOFDINTERVIEW.mp3</name>
@@ -807,8 +807,8 @@
             <name>HOOFDINTERVIEW</name>
             <enabled>TRUE</enabled>
             <duration>388</duration>
-            <start>6766</start>
-            <end>7154</end>
+            <start>6730</start>
+            <end>7118</end>
             <in>10479</in>
             <out>10867</out>
             <file id="file-r51cbdcc5279a132e3486ccdd8d46b121">
@@ -871,8 +871,8 @@
             <name>HOOFDINTERVIEW</name>
             <enabled>TRUE</enabled>
             <duration>1178</duration>
-            <start>7154</start>
-            <end>8332</end>
+            <start>7118</start>
+            <end>8296</end>
             <in>10867</in>
             <out>12045</out>
             <file id="file-r51cbdcc5279a132e3486ccdd8d46b121">
@@ -935,8 +935,8 @@
             <name>HOOFDINTERVIEW</name>
             <enabled>TRUE</enabled>
             <duration>909</duration>
-            <start>8332</start>
-            <end>9241</end>
+            <start>8296</start>
+            <end>9205</end>
             <in>12678</in>
             <out>13587</out>
             <file id="file-r51cbdcc5279a132e3486ccdd8d46b121">
@@ -999,8 +999,8 @@
             <name>HOOFDINTERVIEW</name>
             <enabled>TRUE</enabled>
             <duration>1259</duration>
-            <start>9241</start>
-            <end>10500</end>
+            <start>9205</start>
+            <end>10464</end>
             <in>13586</in>
             <out>14845</out>
             <file id="file-r51cbdcc5279a132e3486ccdd8d46b121">
@@ -1063,8 +1063,8 @@
             <name>HOOFDINTERVIEW</name>
             <enabled>TRUE</enabled>
             <duration>564</duration>
-            <start>10500</start>
-            <end>11064</end>
+            <start>10464</start>
+            <end>11028</end>
             <in>33683</in>
             <out>34247</out>
             <file id="file-r51cbdcc5279a132e3486ccdd8d46b121">
@@ -1127,8 +1127,8 @@
             <name>HOOFDINTERVIEW</name>
             <enabled>TRUE</enabled>
             <duration>527</duration>
-            <start>11064</start>
-            <end>11591</end>
+            <start>11028</start>
+            <end>11555</end>
             <in>34247</in>
             <out>34774</out>
             <file id="file-r51cbdcc5279a132e3486ccdd8d46b121">
@@ -1191,8 +1191,8 @@
             <name>HOOFDINTERVIEW</name>
             <enabled>TRUE</enabled>
             <duration>629</duration>
-            <start>11591</start>
-            <end>12220</end>
+            <start>11555</start>
+            <end>12184</end>
             <in>39859</in>
             <out>40488</out>
             <file id="file-r51cbdcc5279a132e3486ccdd8d46b121">
@@ -1255,8 +1255,8 @@
             <name>TESTIMONIAL</name>
             <enabled>TRUE</enabled>
             <duration>622</duration>
-            <start>12220</start>
-            <end>12842</end>
+            <start>12184</start>
+            <end>12806</end>
             <in>21156</in>
             <out>21778</out>
             <file id="file-r1e9e2d971036f82dc054f5368a54c9b4">
@@ -1319,8 +1319,8 @@
             <name>HOOFDINTERVIEW</name>
             <enabled>TRUE</enabled>
             <duration>978</duration>
-            <start>12842</start>
-            <end>13820</end>
+            <start>12806</start>
+            <end>13784</end>
             <in>27629</in>
             <out>28607</out>
             <file id="file-r51cbdcc5279a132e3486ccdd8d46b121">
@@ -1383,8 +1383,8 @@
             <name>HOOFDINTERVIEW</name>
             <enabled>TRUE</enabled>
             <duration>389</duration>
-            <start>13820</start>
-            <end>14209</end>
+            <start>13784</start>
+            <end>14173</end>
             <in>28649</in>
             <out>29038</out>
             <file id="file-r51cbdcc5279a132e3486ccdd8d46b121">
@@ -1447,8 +1447,8 @@
             <name>HOOFDINTERVIEW</name>
             <enabled>TRUE</enabled>
             <duration>686</duration>
-            <start>14209</start>
-            <end>14895</end>
+            <start>14173</start>
+            <end>14859</end>
             <in>29039</in>
             <out>29725</out>
             <file id="file-r51cbdcc5279a132e3486ccdd8d46b121">
@@ -1511,8 +1511,8 @@
             <name>HOOFDINTERVIEW</name>
             <enabled>TRUE</enabled>
             <duration>605</duration>
-            <start>14895</start>
-            <end>15500</end>
+            <start>14859</start>
+            <end>15464</end>
             <in>58725</in>
             <out>59330</out>
             <file id="file-r51cbdcc5279a132e3486ccdd8d46b121">
@@ -1575,8 +1575,8 @@
             <name>HOOFDINTERVIEW</name>
             <enabled>TRUE</enabled>
             <duration>1043</duration>
-            <start>15500</start>
-            <end>16543</end>
+            <start>15464</start>
+            <end>16507</end>
             <in>61178</in>
             <out>62221</out>
             <file id="file-r51cbdcc5279a132e3486ccdd8d46b121">
@@ -1639,8 +1639,8 @@
             <name>HOOFDINTERVIEW</name>
             <enabled>TRUE</enabled>
             <duration>743</duration>
-            <start>16543</start>
-            <end>17286</end>
+            <start>16507</start>
+            <end>17250</end>
             <in>69125</in>
             <out>69868</out>
             <file id="file-r51cbdcc5279a132e3486ccdd8d46b121">
@@ -1703,8 +1703,8 @@
             <name>HOOFDINTERVIEW</name>
             <enabled>TRUE</enabled>
             <duration>645</duration>
-            <start>17286</start>
-            <end>17931</end>
+            <start>17250</start>
+            <end>17895</end>
             <in>53059</in>
             <out>53704</out>
             <file id="file-r51cbdcc5279a132e3486ccdd8d46b121">
@@ -1767,8 +1767,8 @@
             <name>HOOFDINTERVIEW</name>
             <enabled>TRUE</enabled>
             <duration>812</duration>
-            <start>17931</start>
-            <end>18743</end>
+            <start>17895</start>
+            <end>18707</end>
             <in>70894</in>
             <out>71706</out>
             <file id="file-r51cbdcc5279a132e3486ccdd8d46b121">
@@ -1831,8 +1831,8 @@
             <name>HOOFDINTERVIEW</name>
             <enabled>TRUE</enabled>
             <duration>243</duration>
-            <start>18743</start>
-            <end>18986</end>
+            <start>18707</start>
+            <end>18950</end>
             <in>58447</in>
             <out>58690</out>
             <file id="file-r51cbdcc5279a132e3486ccdd8d46b121">
@@ -1895,8 +1895,8 @@
             <name>HOOFDINTERVIEW</name>
             <enabled>TRUE</enabled>
             <duration>541</duration>
-            <start>18986</start>
-            <end>19527</end>
+            <start>18950</start>
+            <end>19491</end>
             <in>86818</in>
             <out>87359</out>
             <file id="file-r51cbdcc5279a132e3486ccdd8d46b121">
@@ -1959,8 +1959,8 @@
             <name>HOOFDINTERVIEW</name>
             <enabled>TRUE</enabled>
             <duration>507</duration>
-            <start>19527</start>
-            <end>20034</end>
+            <start>19491</start>
+            <end>19998</end>
             <in>86311</in>
             <out>86818</out>
             <file id="file-r51cbdcc5279a132e3486ccdd8d46b121">
@@ -2517,10 +2517,10 @@
           <clipitem id="clipitem-audio-12">
             <name>HOOFDINTERVIEW</name>
             <enabled>TRUE</enabled>
-            <duration>849</duration>
+            <duration>813</duration>
             <start>5917</start>
-            <end>6766</end>
-            <in>2297</in>
+            <end>6730</end>
+            <in>2333</in>
             <out>3146</out>
             <file id="file-r51cbdcc5279a132e3486ccdd8d46b121">
               <name>HOOFDINTERVIEW.mp3</name>
@@ -2562,8 +2562,8 @@
             <name>HOOFDINTERVIEW</name>
             <enabled>TRUE</enabled>
             <duration>388</duration>
-            <start>6766</start>
-            <end>7154</end>
+            <start>6730</start>
+            <end>7118</end>
             <in>10479</in>
             <out>10867</out>
             <file id="file-r51cbdcc5279a132e3486ccdd8d46b121">
@@ -2606,8 +2606,8 @@
             <name>HOOFDINTERVIEW</name>
             <enabled>TRUE</enabled>
             <duration>1178</duration>
-            <start>7154</start>
-            <end>8332</end>
+            <start>7118</start>
+            <end>8296</end>
             <in>10867</in>
             <out>12045</out>
             <file id="file-r51cbdcc5279a132e3486ccdd8d46b121">
@@ -2650,8 +2650,8 @@
             <name>HOOFDINTERVIEW</name>
             <enabled>TRUE</enabled>
             <duration>909</duration>
-            <start>8332</start>
-            <end>9241</end>
+            <start>8296</start>
+            <end>9205</end>
             <in>12678</in>
             <out>13587</out>
             <file id="file-r51cbdcc5279a132e3486ccdd8d46b121">
@@ -2694,8 +2694,8 @@
             <name>HOOFDINTERVIEW</name>
             <enabled>TRUE</enabled>
             <duration>1259</duration>
-            <start>9241</start>
-            <end>10500</end>
+            <start>9205</start>
+            <end>10464</end>
             <in>13586</in>
             <out>14845</out>
             <file id="file-r51cbdcc5279a132e3486ccdd8d46b121">
@@ -2738,8 +2738,8 @@
             <name>HOOFDINTERVIEW</name>
             <enabled>TRUE</enabled>
             <duration>564</duration>
-            <start>10500</start>
-            <end>11064</end>
+            <start>10464</start>
+            <end>11028</end>
             <in>33683</in>
             <out>34247</out>
             <file id="file-r51cbdcc5279a132e3486ccdd8d46b121">
@@ -2782,8 +2782,8 @@
             <name>HOOFDINTERVIEW</name>
             <enabled>TRUE</enabled>
             <duration>527</duration>
-            <start>11064</start>
-            <end>11591</end>
+            <start>11028</start>
+            <end>11555</end>
             <in>34247</in>
             <out>34774</out>
             <file id="file-r51cbdcc5279a132e3486ccdd8d46b121">
@@ -2826,8 +2826,8 @@
             <name>HOOFDINTERVIEW</name>
             <enabled>TRUE</enabled>
             <duration>629</duration>
-            <start>11591</start>
-            <end>12220</end>
+            <start>11555</start>
+            <end>12184</end>
             <in>39859</in>
             <out>40488</out>
             <file id="file-r51cbdcc5279a132e3486ccdd8d46b121">
@@ -2870,8 +2870,8 @@
             <name>TESTIMONIAL</name>
             <enabled>TRUE</enabled>
             <duration>622</duration>
-            <start>12220</start>
-            <end>12842</end>
+            <start>12184</start>
+            <end>12806</end>
             <in>21156</in>
             <out>21778</out>
             <file id="file-r1e9e2d971036f82dc054f5368a54c9b4">
@@ -2914,8 +2914,8 @@
             <name>HOOFDINTERVIEW</name>
             <enabled>TRUE</enabled>
             <duration>978</duration>
-            <start>12842</start>
-            <end>13820</end>
+            <start>12806</start>
+            <end>13784</end>
             <in>27629</in>
             <out>28607</out>
             <file id="file-r51cbdcc5279a132e3486ccdd8d46b121">
@@ -2958,8 +2958,8 @@
             <name>HOOFDINTERVIEW</name>
             <enabled>TRUE</enabled>
             <duration>389</duration>
-            <start>13820</start>
-            <end>14209</end>
+            <start>13784</start>
+            <end>14173</end>
             <in>28649</in>
             <out>29038</out>
             <file id="file-r51cbdcc5279a132e3486ccdd8d46b121">
@@ -3002,8 +3002,8 @@
             <name>HOOFDINTERVIEW</name>
             <enabled>TRUE</enabled>
             <duration>686</duration>
-            <start>14209</start>
-            <end>14895</end>
+            <start>14173</start>
+            <end>14859</end>
             <in>29039</in>
             <out>29725</out>
             <file id="file-r51cbdcc5279a132e3486ccdd8d46b121">
@@ -3046,8 +3046,8 @@
             <name>HOOFDINTERVIEW</name>
             <enabled>TRUE</enabled>
             <duration>605</duration>
-            <start>14895</start>
-            <end>15500</end>
+            <start>14859</start>
+            <end>15464</end>
             <in>58725</in>
             <out>59330</out>
             <file id="file-r51cbdcc5279a132e3486ccdd8d46b121">
@@ -3090,8 +3090,8 @@
             <name>HOOFDINTERVIEW</name>
             <enabled>TRUE</enabled>
             <duration>1043</duration>
-            <start>15500</start>
-            <end>16543</end>
+            <start>15464</start>
+            <end>16507</end>
             <in>61178</in>
             <out>62221</out>
             <file id="file-r51cbdcc5279a132e3486ccdd8d46b121">
@@ -3134,8 +3134,8 @@
             <name>HOOFDINTERVIEW</name>
             <enabled>TRUE</enabled>
             <duration>743</duration>
-            <start>16543</start>
-            <end>17286</end>
+            <start>16507</start>
+            <end>17250</end>
             <in>69125</in>
             <out>69868</out>
             <file id="file-r51cbdcc5279a132e3486ccdd8d46b121">
@@ -3178,8 +3178,8 @@
             <name>HOOFDINTERVIEW</name>
             <enabled>TRUE</enabled>
             <duration>645</duration>
-            <start>17286</start>
-            <end>17931</end>
+            <start>17250</start>
+            <end>17895</end>
             <in>53059</in>
             <out>53704</out>
             <file id="file-r51cbdcc5279a132e3486ccdd8d46b121">
@@ -3222,8 +3222,8 @@
             <name>HOOFDINTERVIEW</name>
             <enabled>TRUE</enabled>
             <duration>812</duration>
-            <start>17931</start>
-            <end>18743</end>
+            <start>17895</start>
+            <end>18707</end>
             <in>70894</in>
             <out>71706</out>
             <file id="file-r51cbdcc5279a132e3486ccdd8d46b121">
@@ -3266,8 +3266,8 @@
             <name>HOOFDINTERVIEW</name>
             <enabled>TRUE</enabled>
             <duration>243</duration>
-            <start>18743</start>
-            <end>18986</end>
+            <start>18707</start>
+            <end>18950</end>
             <in>58447</in>
             <out>58690</out>
             <file id="file-r51cbdcc5279a132e3486ccdd8d46b121">
@@ -3310,8 +3310,8 @@
             <name>HOOFDINTERVIEW</name>
             <enabled>TRUE</enabled>
             <duration>541</duration>
-            <start>18986</start>
-            <end>19527</end>
+            <start>18950</start>
+            <end>19491</end>
             <in>86818</in>
             <out>87359</out>
             <file id="file-r51cbdcc5279a132e3486ccdd8d46b121">
@@ -3354,8 +3354,8 @@
             <name>HOOFDINTERVIEW</name>
             <enabled>TRUE</enabled>
             <duration>507</duration>
-            <start>19527</start>
-            <end>20034</end>
+            <start>19491</start>
+            <end>19998</end>
             <in>86311</in>
             <out>86818</out>
             <file id="file-r51cbdcc5279a132e3486ccdd8d46b121">
