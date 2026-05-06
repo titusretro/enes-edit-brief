@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE xmeml>
 <xmeml version="5">
-  <sequence id="sequence-0bb86f36-0e5a-480f-b786-2a4df8a26b1a">
-    <uuid>0bb86f36-0e5a-480f-b786-2a4df8a26b1a</uuid>
-    <name>HOOFDINTERVIEW 20260506-082433</name>
-    <duration>19468</duration>
+  <sequence id="sequence-8be1b71a-1221-4b42-b1ef-d4183a7e8738">
+    <uuid>8be1b71a-1221-4b42-b1ef-d4183a7e8738</uuid>
+    <name>HOOFDINTERVIEW 20260506-084104</name>
+    <duration>20892</duration>
     <rate>
       <timebase>25</timebase>
       <ntsc>FALSE</ntsc>
     </rate>
     <in>0</in>
-    <out>19468</out>
+    <out>20892</out>
     <timecode>
       <rate>
         <timebase>25</timebase>
@@ -614,11 +614,11 @@
           <clipitem id="clipitem-video-10">
             <name>HOOFDINTERVIEW</name>
             <enabled>TRUE</enabled>
-            <duration>100</duration>
+            <duration>293</duration>
             <start>4393</start>
-            <end>4493</end>
-            <in>2197</in>
-            <out>2297</out>
+            <end>4686</end>
+            <in>1736</in>
+            <out>2029</out>
             <file id="file-r51cbdcc5279a132e3486ccdd8d46b121">
               <name>HOOFDINTERVIEW.mp3</name>
               <pathurl>file:///Users/benzoref/Documents/1.%20VIDEO/het%20pleintje%20van%202026/Afl%201/rrfilms_hoofdinterview-mp3_2026-05-05_1033/HOOFDINTERVIEW.mp3</pathurl>
@@ -678,11 +678,11 @@
           <clipitem id="clipitem-video-11">
             <name>HOOFDINTERVIEW</name>
             <enabled>TRUE</enabled>
-            <duration>849</duration>
-            <start>4493</start>
-            <end>5342</end>
-            <in>2297</in>
-            <out>3146</out>
+            <duration>1231</duration>
+            <start>4686</start>
+            <end>5917</end>
+            <in>3651</in>
+            <out>4882</out>
             <file id="file-r51cbdcc5279a132e3486ccdd8d46b121">
               <name>HOOFDINTERVIEW.mp3</name>
               <pathurl>file:///Users/benzoref/Documents/1.%20VIDEO/het%20pleintje%20van%202026/Afl%201/rrfilms_hoofdinterview-mp3_2026-05-05_1033/HOOFDINTERVIEW.mp3</pathurl>
@@ -742,11 +742,11 @@
           <clipitem id="clipitem-video-12">
             <name>HOOFDINTERVIEW</name>
             <enabled>TRUE</enabled>
-            <duration>388</duration>
-            <start>5342</start>
-            <end>5730</end>
-            <in>10479</in>
-            <out>10867</out>
+            <duration>849</duration>
+            <start>5917</start>
+            <end>6766</end>
+            <in>2297</in>
+            <out>3146</out>
             <file id="file-r51cbdcc5279a132e3486ccdd8d46b121">
               <name>HOOFDINTERVIEW.mp3</name>
               <pathurl>file:///Users/benzoref/Documents/1.%20VIDEO/het%20pleintje%20van%202026/Afl%201/rrfilms_hoofdinterview-mp3_2026-05-05_1033/HOOFDINTERVIEW.mp3</pathurl>
@@ -806,11 +806,11 @@
           <clipitem id="clipitem-video-13">
             <name>HOOFDINTERVIEW</name>
             <enabled>TRUE</enabled>
-            <duration>1178</duration>
-            <start>5730</start>
-            <end>6908</end>
-            <in>10867</in>
-            <out>12045</out>
+            <duration>388</duration>
+            <start>6766</start>
+            <end>7154</end>
+            <in>10479</in>
+            <out>10867</out>
             <file id="file-r51cbdcc5279a132e3486ccdd8d46b121">
               <name>HOOFDINTERVIEW.mp3</name>
               <pathurl>file:///Users/benzoref/Documents/1.%20VIDEO/het%20pleintje%20van%202026/Afl%201/rrfilms_hoofdinterview-mp3_2026-05-05_1033/HOOFDINTERVIEW.mp3</pathurl>
@@ -870,11 +870,11 @@
           <clipitem id="clipitem-video-14">
             <name>HOOFDINTERVIEW</name>
             <enabled>TRUE</enabled>
-            <duration>909</duration>
-            <start>6908</start>
-            <end>7817</end>
-            <in>12678</in>
-            <out>13587</out>
+            <duration>1178</duration>
+            <start>7154</start>
+            <end>8332</end>
+            <in>10867</in>
+            <out>12045</out>
             <file id="file-r51cbdcc5279a132e3486ccdd8d46b121">
               <name>HOOFDINTERVIEW.mp3</name>
               <pathurl>file:///Users/benzoref/Documents/1.%20VIDEO/het%20pleintje%20van%202026/Afl%201/rrfilms_hoofdinterview-mp3_2026-05-05_1033/HOOFDINTERVIEW.mp3</pathurl>
@@ -934,11 +934,11 @@
           <clipitem id="clipitem-video-15">
             <name>HOOFDINTERVIEW</name>
             <enabled>TRUE</enabled>
-            <duration>1259</duration>
-            <start>7817</start>
-            <end>9076</end>
-            <in>13586</in>
-            <out>14845</out>
+            <duration>909</duration>
+            <start>8332</start>
+            <end>9241</end>
+            <in>12678</in>
+            <out>13587</out>
             <file id="file-r51cbdcc5279a132e3486ccdd8d46b121">
               <name>HOOFDINTERVIEW.mp3</name>
               <pathurl>file:///Users/benzoref/Documents/1.%20VIDEO/het%20pleintje%20van%202026/Afl%201/rrfilms_hoofdinterview-mp3_2026-05-05_1033/HOOFDINTERVIEW.mp3</pathurl>
@@ -998,11 +998,11 @@
           <clipitem id="clipitem-video-16">
             <name>HOOFDINTERVIEW</name>
             <enabled>TRUE</enabled>
-            <duration>564</duration>
-            <start>9076</start>
-            <end>9640</end>
-            <in>33683</in>
-            <out>34247</out>
+            <duration>1259</duration>
+            <start>9241</start>
+            <end>10500</end>
+            <in>13586</in>
+            <out>14845</out>
             <file id="file-r51cbdcc5279a132e3486ccdd8d46b121">
               <name>HOOFDINTERVIEW.mp3</name>
               <pathurl>file:///Users/benzoref/Documents/1.%20VIDEO/het%20pleintje%20van%202026/Afl%201/rrfilms_hoofdinterview-mp3_2026-05-05_1033/HOOFDINTERVIEW.mp3</pathurl>
@@ -1062,11 +1062,11 @@
           <clipitem id="clipitem-video-17">
             <name>HOOFDINTERVIEW</name>
             <enabled>TRUE</enabled>
-            <duration>527</duration>
-            <start>9640</start>
-            <end>10167</end>
-            <in>34247</in>
-            <out>34774</out>
+            <duration>564</duration>
+            <start>10500</start>
+            <end>11064</end>
+            <in>33683</in>
+            <out>34247</out>
             <file id="file-r51cbdcc5279a132e3486ccdd8d46b121">
               <name>HOOFDINTERVIEW.mp3</name>
               <pathurl>file:///Users/benzoref/Documents/1.%20VIDEO/het%20pleintje%20van%202026/Afl%201/rrfilms_hoofdinterview-mp3_2026-05-05_1033/HOOFDINTERVIEW.mp3</pathurl>
@@ -1126,11 +1126,11 @@
           <clipitem id="clipitem-video-18">
             <name>HOOFDINTERVIEW</name>
             <enabled>TRUE</enabled>
-            <duration>629</duration>
-            <start>10167</start>
-            <end>10796</end>
-            <in>39859</in>
-            <out>40488</out>
+            <duration>527</duration>
+            <start>11064</start>
+            <end>11591</end>
+            <in>34247</in>
+            <out>34774</out>
             <file id="file-r51cbdcc5279a132e3486ccdd8d46b121">
               <name>HOOFDINTERVIEW.mp3</name>
               <pathurl>file:///Users/benzoref/Documents/1.%20VIDEO/het%20pleintje%20van%202026/Afl%201/rrfilms_hoofdinterview-mp3_2026-05-05_1033/HOOFDINTERVIEW.mp3</pathurl>
@@ -1188,21 +1188,21 @@
             </link>
           </clipitem>
           <clipitem id="clipitem-video-19">
-            <name>TESTIMONIAL</name>
+            <name>HOOFDINTERVIEW</name>
             <enabled>TRUE</enabled>
-            <duration>622</duration>
-            <start>10796</start>
-            <end>11418</end>
-            <in>21156</in>
-            <out>21778</out>
-            <file id="file-r1e9e2d971036f82dc054f5368a54c9b4">
-              <name>TESTIMONIAL.mp3</name>
-              <pathurl>file:///Users/benzoref/Documents/1.%20VIDEO/het%20pleintje%20van%202026/Afl%201/rrfilms_hoofdinterview-mp3_2026-05-05_1033/TESTIMONIAL.mp3</pathurl>
+            <duration>629</duration>
+            <start>11591</start>
+            <end>12220</end>
+            <in>39859</in>
+            <out>40488</out>
+            <file id="file-r51cbdcc5279a132e3486ccdd8d46b121">
+              <name>HOOFDINTERVIEW.mp3</name>
+              <pathurl>file:///Users/benzoref/Documents/1.%20VIDEO/het%20pleintje%20van%202026/Afl%201/rrfilms_hoofdinterview-mp3_2026-05-05_1033/HOOFDINTERVIEW.mp3</pathurl>
               <rate>
                 <timebase>25</timebase>
                 <ntsc>FALSE</ntsc>
               </rate>
-              <duration>37663</duration>
+              <duration>91762</duration>
               <timecode>
                 <rate>
                   <timebase>25</timebase>
@@ -1252,21 +1252,21 @@
             </link>
           </clipitem>
           <clipitem id="clipitem-video-20">
-            <name>HOOFDINTERVIEW</name>
+            <name>TESTIMONIAL</name>
             <enabled>TRUE</enabled>
-            <duration>978</duration>
-            <start>11418</start>
-            <end>12396</end>
-            <in>27629</in>
-            <out>28607</out>
-            <file id="file-r51cbdcc5279a132e3486ccdd8d46b121">
-              <name>HOOFDINTERVIEW.mp3</name>
-              <pathurl>file:///Users/benzoref/Documents/1.%20VIDEO/het%20pleintje%20van%202026/Afl%201/rrfilms_hoofdinterview-mp3_2026-05-05_1033/HOOFDINTERVIEW.mp3</pathurl>
+            <duration>622</duration>
+            <start>12220</start>
+            <end>12842</end>
+            <in>21156</in>
+            <out>21778</out>
+            <file id="file-r1e9e2d971036f82dc054f5368a54c9b4">
+              <name>TESTIMONIAL.mp3</name>
+              <pathurl>file:///Users/benzoref/Documents/1.%20VIDEO/het%20pleintje%20van%202026/Afl%201/rrfilms_hoofdinterview-mp3_2026-05-05_1033/TESTIMONIAL.mp3</pathurl>
               <rate>
                 <timebase>25</timebase>
                 <ntsc>FALSE</ntsc>
               </rate>
-              <duration>91762</duration>
+              <duration>37663</duration>
               <timecode>
                 <rate>
                   <timebase>25</timebase>
@@ -1318,11 +1318,11 @@
           <clipitem id="clipitem-video-21">
             <name>HOOFDINTERVIEW</name>
             <enabled>TRUE</enabled>
-            <duration>389</duration>
-            <start>12396</start>
-            <end>12785</end>
-            <in>28649</in>
-            <out>29038</out>
+            <duration>978</duration>
+            <start>12842</start>
+            <end>13820</end>
+            <in>27629</in>
+            <out>28607</out>
             <file id="file-r51cbdcc5279a132e3486ccdd8d46b121">
               <name>HOOFDINTERVIEW.mp3</name>
               <pathurl>file:///Users/benzoref/Documents/1.%20VIDEO/het%20pleintje%20van%202026/Afl%201/rrfilms_hoofdinterview-mp3_2026-05-05_1033/HOOFDINTERVIEW.mp3</pathurl>
@@ -1382,11 +1382,11 @@
           <clipitem id="clipitem-video-22">
             <name>HOOFDINTERVIEW</name>
             <enabled>TRUE</enabled>
-            <duration>686</duration>
-            <start>12785</start>
-            <end>13471</end>
-            <in>29039</in>
-            <out>29725</out>
+            <duration>389</duration>
+            <start>13820</start>
+            <end>14209</end>
+            <in>28649</in>
+            <out>29038</out>
             <file id="file-r51cbdcc5279a132e3486ccdd8d46b121">
               <name>HOOFDINTERVIEW.mp3</name>
               <pathurl>file:///Users/benzoref/Documents/1.%20VIDEO/het%20pleintje%20van%202026/Afl%201/rrfilms_hoofdinterview-mp3_2026-05-05_1033/HOOFDINTERVIEW.mp3</pathurl>
@@ -1446,11 +1446,11 @@
           <clipitem id="clipitem-video-23">
             <name>HOOFDINTERVIEW</name>
             <enabled>TRUE</enabled>
-            <duration>625</duration>
-            <start>13471</start>
-            <end>14096</end>
-            <in>30686</in>
-            <out>31311</out>
+            <duration>686</duration>
+            <start>14209</start>
+            <end>14895</end>
+            <in>29039</in>
+            <out>29725</out>
             <file id="file-r51cbdcc5279a132e3486ccdd8d46b121">
               <name>HOOFDINTERVIEW.mp3</name>
               <pathurl>file:///Users/benzoref/Documents/1.%20VIDEO/het%20pleintje%20van%202026/Afl%201/rrfilms_hoofdinterview-mp3_2026-05-05_1033/HOOFDINTERVIEW.mp3</pathurl>
@@ -1510,11 +1510,11 @@
           <clipitem id="clipitem-video-24">
             <name>HOOFDINTERVIEW</name>
             <enabled>TRUE</enabled>
-            <duration>605</duration>
-            <start>14096</start>
-            <end>14701</end>
-            <in>58725</in>
-            <out>59330</out>
+            <duration>625</duration>
+            <start>14895</start>
+            <end>15520</end>
+            <in>30686</in>
+            <out>31311</out>
             <file id="file-r51cbdcc5279a132e3486ccdd8d46b121">
               <name>HOOFDINTERVIEW.mp3</name>
               <pathurl>file:///Users/benzoref/Documents/1.%20VIDEO/het%20pleintje%20van%202026/Afl%201/rrfilms_hoofdinterview-mp3_2026-05-05_1033/HOOFDINTERVIEW.mp3</pathurl>
@@ -1574,11 +1574,11 @@
           <clipitem id="clipitem-video-25">
             <name>HOOFDINTERVIEW</name>
             <enabled>TRUE</enabled>
-            <duration>1043</duration>
-            <start>14701</start>
-            <end>15744</end>
-            <in>61178</in>
-            <out>62221</out>
+            <duration>605</duration>
+            <start>15520</start>
+            <end>16125</end>
+            <in>58725</in>
+            <out>59330</out>
             <file id="file-r51cbdcc5279a132e3486ccdd8d46b121">
               <name>HOOFDINTERVIEW.mp3</name>
               <pathurl>file:///Users/benzoref/Documents/1.%20VIDEO/het%20pleintje%20van%202026/Afl%201/rrfilms_hoofdinterview-mp3_2026-05-05_1033/HOOFDINTERVIEW.mp3</pathurl>
@@ -1638,11 +1638,11 @@
           <clipitem id="clipitem-video-26">
             <name>HOOFDINTERVIEW</name>
             <enabled>TRUE</enabled>
-            <duration>743</duration>
-            <start>15744</start>
-            <end>16487</end>
-            <in>69125</in>
-            <out>69868</out>
+            <duration>1043</duration>
+            <start>16125</start>
+            <end>17168</end>
+            <in>61178</in>
+            <out>62221</out>
             <file id="file-r51cbdcc5279a132e3486ccdd8d46b121">
               <name>HOOFDINTERVIEW.mp3</name>
               <pathurl>file:///Users/benzoref/Documents/1.%20VIDEO/het%20pleintje%20van%202026/Afl%201/rrfilms_hoofdinterview-mp3_2026-05-05_1033/HOOFDINTERVIEW.mp3</pathurl>
@@ -1702,11 +1702,11 @@
           <clipitem id="clipitem-video-27">
             <name>HOOFDINTERVIEW</name>
             <enabled>TRUE</enabled>
-            <duration>645</duration>
-            <start>16487</start>
-            <end>17132</end>
-            <in>53059</in>
-            <out>53704</out>
+            <duration>743</duration>
+            <start>17168</start>
+            <end>17911</end>
+            <in>69125</in>
+            <out>69868</out>
             <file id="file-r51cbdcc5279a132e3486ccdd8d46b121">
               <name>HOOFDINTERVIEW.mp3</name>
               <pathurl>file:///Users/benzoref/Documents/1.%20VIDEO/het%20pleintje%20van%202026/Afl%201/rrfilms_hoofdinterview-mp3_2026-05-05_1033/HOOFDINTERVIEW.mp3</pathurl>
@@ -1766,11 +1766,11 @@
           <clipitem id="clipitem-video-28">
             <name>HOOFDINTERVIEW</name>
             <enabled>TRUE</enabled>
-            <duration>812</duration>
-            <start>17132</start>
-            <end>17944</end>
-            <in>70894</in>
-            <out>71706</out>
+            <duration>645</duration>
+            <start>17911</start>
+            <end>18556</end>
+            <in>53059</in>
+            <out>53704</out>
             <file id="file-r51cbdcc5279a132e3486ccdd8d46b121">
               <name>HOOFDINTERVIEW.mp3</name>
               <pathurl>file:///Users/benzoref/Documents/1.%20VIDEO/het%20pleintje%20van%202026/Afl%201/rrfilms_hoofdinterview-mp3_2026-05-05_1033/HOOFDINTERVIEW.mp3</pathurl>
@@ -1830,11 +1830,11 @@
           <clipitem id="clipitem-video-29">
             <name>HOOFDINTERVIEW</name>
             <enabled>TRUE</enabled>
-            <duration>243</duration>
-            <start>17944</start>
-            <end>18187</end>
-            <in>58447</in>
-            <out>58690</out>
+            <duration>812</duration>
+            <start>18556</start>
+            <end>19368</end>
+            <in>70894</in>
+            <out>71706</out>
             <file id="file-r51cbdcc5279a132e3486ccdd8d46b121">
               <name>HOOFDINTERVIEW.mp3</name>
               <pathurl>file:///Users/benzoref/Documents/1.%20VIDEO/het%20pleintje%20van%202026/Afl%201/rrfilms_hoofdinterview-mp3_2026-05-05_1033/HOOFDINTERVIEW.mp3</pathurl>
@@ -1894,11 +1894,11 @@
           <clipitem id="clipitem-video-30">
             <name>HOOFDINTERVIEW</name>
             <enabled>TRUE</enabled>
-            <duration>233</duration>
-            <start>18187</start>
-            <end>18420</end>
-            <in>81025</in>
-            <out>81258</out>
+            <duration>243</duration>
+            <start>19368</start>
+            <end>19611</end>
+            <in>58447</in>
+            <out>58690</out>
             <file id="file-r51cbdcc5279a132e3486ccdd8d46b121">
               <name>HOOFDINTERVIEW.mp3</name>
               <pathurl>file:///Users/benzoref/Documents/1.%20VIDEO/het%20pleintje%20van%202026/Afl%201/rrfilms_hoofdinterview-mp3_2026-05-05_1033/HOOFDINTERVIEW.mp3</pathurl>
@@ -1958,11 +1958,11 @@
           <clipitem id="clipitem-video-31">
             <name>HOOFDINTERVIEW</name>
             <enabled>TRUE</enabled>
-            <duration>541</duration>
-            <start>18420</start>
-            <end>18961</end>
-            <in>86818</in>
-            <out>87359</out>
+            <duration>233</duration>
+            <start>19611</start>
+            <end>19844</end>
+            <in>81025</in>
+            <out>81258</out>
             <file id="file-r51cbdcc5279a132e3486ccdd8d46b121">
               <name>HOOFDINTERVIEW.mp3</name>
               <pathurl>file:///Users/benzoref/Documents/1.%20VIDEO/het%20pleintje%20van%202026/Afl%201/rrfilms_hoofdinterview-mp3_2026-05-05_1033/HOOFDINTERVIEW.mp3</pathurl>
@@ -2022,11 +2022,11 @@
           <clipitem id="clipitem-video-32">
             <name>HOOFDINTERVIEW</name>
             <enabled>TRUE</enabled>
-            <duration>507</duration>
-            <start>18961</start>
-            <end>19468</end>
-            <in>86311</in>
-            <out>86818</out>
+            <duration>541</duration>
+            <start>19844</start>
+            <end>20385</end>
+            <in>86818</in>
+            <out>87359</out>
             <file id="file-r51cbdcc5279a132e3486ccdd8d46b121">
               <name>HOOFDINTERVIEW.mp3</name>
               <pathurl>file:///Users/benzoref/Documents/1.%20VIDEO/het%20pleintje%20van%202026/Afl%201/rrfilms_hoofdinterview-mp3_2026-05-05_1033/HOOFDINTERVIEW.mp3</pathurl>
@@ -2080,6 +2080,70 @@
               <mediatype>audio</mediatype>
               <trackindex>1</trackindex>
               <clipindex>32</clipindex>
+              <groupindex>1</groupindex>
+            </link>
+          </clipitem>
+          <clipitem id="clipitem-video-33">
+            <name>HOOFDINTERVIEW</name>
+            <enabled>TRUE</enabled>
+            <duration>507</duration>
+            <start>20385</start>
+            <end>20892</end>
+            <in>86311</in>
+            <out>86818</out>
+            <file id="file-r51cbdcc5279a132e3486ccdd8d46b121">
+              <name>HOOFDINTERVIEW.mp3</name>
+              <pathurl>file:///Users/benzoref/Documents/1.%20VIDEO/het%20pleintje%20van%202026/Afl%201/rrfilms_hoofdinterview-mp3_2026-05-05_1033/HOOFDINTERVIEW.mp3</pathurl>
+              <rate>
+                <timebase>25</timebase>
+                <ntsc>FALSE</ntsc>
+              </rate>
+              <duration>91762</duration>
+              <timecode>
+                <rate>
+                  <timebase>25</timebase>
+                  <ntsc>FALSE</ntsc>
+                </rate>
+                <frame>0</frame>
+                <displayformat>NDF</displayformat>
+              </timecode>
+              <media>
+                <video>
+                  <samplecharacteristics>
+                    <rate>
+                      <timebase>25</timebase>
+                      <ntsc>FALSE</ntsc>
+                    </rate>
+                    <width>0</width>
+                    <height>0</height>
+                    <anamorphic>FALSE</anamorphic>
+                    <pixelaspectratio>square</pixelaspectratio>
+                    <fielddominance>none</fielddominance>
+                  </samplecharacteristics>
+                </video>
+                <audio>
+                  <samplecharacteristics>
+                    <samplerate>48000</samplerate>
+                    <sampledepth>16</sampledepth>
+                  </samplecharacteristics>
+                </audio>
+              </media>
+            </file>
+            <sourcetrack>
+              <mediatype>video</mediatype>
+              <trackindex>1</trackindex>
+            </sourcetrack>
+            <link>
+              <linkclipref>clipitem-video-33</linkclipref>
+              <mediatype>video</mediatype>
+              <trackindex>1</trackindex>
+              <clipindex>33</clipindex>
+            </link>
+            <link>
+              <linkclipref>clipitem-audio-33</linkclipref>
+              <mediatype>audio</mediatype>
+              <trackindex>1</trackindex>
+              <clipindex>33</clipindex>
               <groupindex>1</groupindex>
             </link>
           </clipitem>
@@ -2493,11 +2557,11 @@
           <clipitem id="clipitem-audio-10">
             <name>HOOFDINTERVIEW</name>
             <enabled>TRUE</enabled>
-            <duration>100</duration>
+            <duration>293</duration>
             <start>4393</start>
-            <end>4493</end>
-            <in>2197</in>
-            <out>2297</out>
+            <end>4686</end>
+            <in>1736</in>
+            <out>2029</out>
             <file id="file-r51cbdcc5279a132e3486ccdd8d46b121">
               <name>HOOFDINTERVIEW.mp3</name>
               <pathurl>file:///Users/benzoref/Documents/1.%20VIDEO/het%20pleintje%20van%202026/Afl%201/rrfilms_hoofdinterview-mp3_2026-05-05_1033/HOOFDINTERVIEW.mp3</pathurl>
@@ -2537,11 +2601,11 @@
           <clipitem id="clipitem-audio-11">
             <name>HOOFDINTERVIEW</name>
             <enabled>TRUE</enabled>
-            <duration>849</duration>
-            <start>4493</start>
-            <end>5342</end>
-            <in>2297</in>
-            <out>3146</out>
+            <duration>1231</duration>
+            <start>4686</start>
+            <end>5917</end>
+            <in>3651</in>
+            <out>4882</out>
             <file id="file-r51cbdcc5279a132e3486ccdd8d46b121">
               <name>HOOFDINTERVIEW.mp3</name>
               <pathurl>file:///Users/benzoref/Documents/1.%20VIDEO/het%20pleintje%20van%202026/Afl%201/rrfilms_hoofdinterview-mp3_2026-05-05_1033/HOOFDINTERVIEW.mp3</pathurl>
@@ -2581,11 +2645,11 @@
           <clipitem id="clipitem-audio-12">
             <name>HOOFDINTERVIEW</name>
             <enabled>TRUE</enabled>
-            <duration>388</duration>
-            <start>5342</start>
-            <end>5730</end>
-            <in>10479</in>
-            <out>10867</out>
+            <duration>849</duration>
+            <start>5917</start>
+            <end>6766</end>
+            <in>2297</in>
+            <out>3146</out>
             <file id="file-r51cbdcc5279a132e3486ccdd8d46b121">
               <name>HOOFDINTERVIEW.mp3</name>
               <pathurl>file:///Users/benzoref/Documents/1.%20VIDEO/het%20pleintje%20van%202026/Afl%201/rrfilms_hoofdinterview-mp3_2026-05-05_1033/HOOFDINTERVIEW.mp3</pathurl>
@@ -2625,11 +2689,11 @@
           <clipitem id="clipitem-audio-13">
             <name>HOOFDINTERVIEW</name>
             <enabled>TRUE</enabled>
-            <duration>1178</duration>
-            <start>5730</start>
-            <end>6908</end>
-            <in>10867</in>
-            <out>12045</out>
+            <duration>388</duration>
+            <start>6766</start>
+            <end>7154</end>
+            <in>10479</in>
+            <out>10867</out>
             <file id="file-r51cbdcc5279a132e3486ccdd8d46b121">
               <name>HOOFDINTERVIEW.mp3</name>
               <pathurl>file:///Users/benzoref/Documents/1.%20VIDEO/het%20pleintje%20van%202026/Afl%201/rrfilms_hoofdinterview-mp3_2026-05-05_1033/HOOFDINTERVIEW.mp3</pathurl>
@@ -2669,11 +2733,11 @@
           <clipitem id="clipitem-audio-14">
             <name>HOOFDINTERVIEW</name>
             <enabled>TRUE</enabled>
-            <duration>909</duration>
-            <start>6908</start>
-            <end>7817</end>
-            <in>12678</in>
-            <out>13587</out>
+            <duration>1178</duration>
+            <start>7154</start>
+            <end>8332</end>
+            <in>10867</in>
+            <out>12045</out>
             <file id="file-r51cbdcc5279a132e3486ccdd8d46b121">
               <name>HOOFDINTERVIEW.mp3</name>
               <pathurl>file:///Users/benzoref/Documents/1.%20VIDEO/het%20pleintje%20van%202026/Afl%201/rrfilms_hoofdinterview-mp3_2026-05-05_1033/HOOFDINTERVIEW.mp3</pathurl>
@@ -2713,11 +2777,11 @@
           <clipitem id="clipitem-audio-15">
             <name>HOOFDINTERVIEW</name>
             <enabled>TRUE</enabled>
-            <duration>1259</duration>
-            <start>7817</start>
-            <end>9076</end>
-            <in>13586</in>
-            <out>14845</out>
+            <duration>909</duration>
+            <start>8332</start>
+            <end>9241</end>
+            <in>12678</in>
+            <out>13587</out>
             <file id="file-r51cbdcc5279a132e3486ccdd8d46b121">
               <name>HOOFDINTERVIEW.mp3</name>
               <pathurl>file:///Users/benzoref/Documents/1.%20VIDEO/het%20pleintje%20van%202026/Afl%201/rrfilms_hoofdinterview-mp3_2026-05-05_1033/HOOFDINTERVIEW.mp3</pathurl>
@@ -2757,11 +2821,11 @@
           <clipitem id="clipitem-audio-16">
             <name>HOOFDINTERVIEW</name>
             <enabled>TRUE</enabled>
-            <duration>564</duration>
-            <start>9076</start>
-            <end>9640</end>
-            <in>33683</in>
-            <out>34247</out>
+            <duration>1259</duration>
+            <start>9241</start>
+            <end>10500</end>
+            <in>13586</in>
+            <out>14845</out>
             <file id="file-r51cbdcc5279a132e3486ccdd8d46b121">
               <name>HOOFDINTERVIEW.mp3</name>
               <pathurl>file:///Users/benzoref/Documents/1.%20VIDEO/het%20pleintje%20van%202026/Afl%201/rrfilms_hoofdinterview-mp3_2026-05-05_1033/HOOFDINTERVIEW.mp3</pathurl>
@@ -2801,11 +2865,11 @@
           <clipitem id="clipitem-audio-17">
             <name>HOOFDINTERVIEW</name>
             <enabled>TRUE</enabled>
-            <duration>527</duration>
-            <start>9640</start>
-            <end>10167</end>
-            <in>34247</in>
-            <out>34774</out>
+            <duration>564</duration>
+            <start>10500</start>
+            <end>11064</end>
+            <in>33683</in>
+            <out>34247</out>
             <file id="file-r51cbdcc5279a132e3486ccdd8d46b121">
               <name>HOOFDINTERVIEW.mp3</name>
               <pathurl>file:///Users/benzoref/Documents/1.%20VIDEO/het%20pleintje%20van%202026/Afl%201/rrfilms_hoofdinterview-mp3_2026-05-05_1033/HOOFDINTERVIEW.mp3</pathurl>
@@ -2845,11 +2909,11 @@
           <clipitem id="clipitem-audio-18">
             <name>HOOFDINTERVIEW</name>
             <enabled>TRUE</enabled>
-            <duration>629</duration>
-            <start>10167</start>
-            <end>10796</end>
-            <in>39859</in>
-            <out>40488</out>
+            <duration>527</duration>
+            <start>11064</start>
+            <end>11591</end>
+            <in>34247</in>
+            <out>34774</out>
             <file id="file-r51cbdcc5279a132e3486ccdd8d46b121">
               <name>HOOFDINTERVIEW.mp3</name>
               <pathurl>file:///Users/benzoref/Documents/1.%20VIDEO/het%20pleintje%20van%202026/Afl%201/rrfilms_hoofdinterview-mp3_2026-05-05_1033/HOOFDINTERVIEW.mp3</pathurl>
@@ -2887,21 +2951,21 @@
             </link>
           </clipitem>
           <clipitem id="clipitem-audio-19">
-            <name>TESTIMONIAL</name>
+            <name>HOOFDINTERVIEW</name>
             <enabled>TRUE</enabled>
-            <duration>622</duration>
-            <start>10796</start>
-            <end>11418</end>
-            <in>21156</in>
-            <out>21778</out>
-            <file id="file-r1e9e2d971036f82dc054f5368a54c9b4">
-              <name>TESTIMONIAL.mp3</name>
-              <pathurl>file:///Users/benzoref/Documents/1.%20VIDEO/het%20pleintje%20van%202026/Afl%201/rrfilms_hoofdinterview-mp3_2026-05-05_1033/TESTIMONIAL.mp3</pathurl>
+            <duration>629</duration>
+            <start>11591</start>
+            <end>12220</end>
+            <in>39859</in>
+            <out>40488</out>
+            <file id="file-r51cbdcc5279a132e3486ccdd8d46b121">
+              <name>HOOFDINTERVIEW.mp3</name>
+              <pathurl>file:///Users/benzoref/Documents/1.%20VIDEO/het%20pleintje%20van%202026/Afl%201/rrfilms_hoofdinterview-mp3_2026-05-05_1033/HOOFDINTERVIEW.mp3</pathurl>
               <rate>
                 <timebase>25</timebase>
                 <ntsc>FALSE</ntsc>
               </rate>
-              <duration>37663</duration>
+              <duration>91762</duration>
               <media>
                 <audio>
                   <samplecharacteristics>
@@ -2931,21 +2995,21 @@
             </link>
           </clipitem>
           <clipitem id="clipitem-audio-20">
-            <name>HOOFDINTERVIEW</name>
+            <name>TESTIMONIAL</name>
             <enabled>TRUE</enabled>
-            <duration>978</duration>
-            <start>11418</start>
-            <end>12396</end>
-            <in>27629</in>
-            <out>28607</out>
-            <file id="file-r51cbdcc5279a132e3486ccdd8d46b121">
-              <name>HOOFDINTERVIEW.mp3</name>
-              <pathurl>file:///Users/benzoref/Documents/1.%20VIDEO/het%20pleintje%20van%202026/Afl%201/rrfilms_hoofdinterview-mp3_2026-05-05_1033/HOOFDINTERVIEW.mp3</pathurl>
+            <duration>622</duration>
+            <start>12220</start>
+            <end>12842</end>
+            <in>21156</in>
+            <out>21778</out>
+            <file id="file-r1e9e2d971036f82dc054f5368a54c9b4">
+              <name>TESTIMONIAL.mp3</name>
+              <pathurl>file:///Users/benzoref/Documents/1.%20VIDEO/het%20pleintje%20van%202026/Afl%201/rrfilms_hoofdinterview-mp3_2026-05-05_1033/TESTIMONIAL.mp3</pathurl>
               <rate>
                 <timebase>25</timebase>
                 <ntsc>FALSE</ntsc>
               </rate>
-              <duration>91762</duration>
+              <duration>37663</duration>
               <media>
                 <audio>
                   <samplecharacteristics>
@@ -2977,11 +3041,11 @@
           <clipitem id="clipitem-audio-21">
             <name>HOOFDINTERVIEW</name>
             <enabled>TRUE</enabled>
-            <duration>389</duration>
-            <start>12396</start>
-            <end>12785</end>
-            <in>28649</in>
-            <out>29038</out>
+            <duration>978</duration>
+            <start>12842</start>
+            <end>13820</end>
+            <in>27629</in>
+            <out>28607</out>
             <file id="file-r51cbdcc5279a132e3486ccdd8d46b121">
               <name>HOOFDINTERVIEW.mp3</name>
               <pathurl>file:///Users/benzoref/Documents/1.%20VIDEO/het%20pleintje%20van%202026/Afl%201/rrfilms_hoofdinterview-mp3_2026-05-05_1033/HOOFDINTERVIEW.mp3</pathurl>
@@ -3021,11 +3085,11 @@
           <clipitem id="clipitem-audio-22">
             <name>HOOFDINTERVIEW</name>
             <enabled>TRUE</enabled>
-            <duration>686</duration>
-            <start>12785</start>
-            <end>13471</end>
-            <in>29039</in>
-            <out>29725</out>
+            <duration>389</duration>
+            <start>13820</start>
+            <end>14209</end>
+            <in>28649</in>
+            <out>29038</out>
             <file id="file-r51cbdcc5279a132e3486ccdd8d46b121">
               <name>HOOFDINTERVIEW.mp3</name>
               <pathurl>file:///Users/benzoref/Documents/1.%20VIDEO/het%20pleintje%20van%202026/Afl%201/rrfilms_hoofdinterview-mp3_2026-05-05_1033/HOOFDINTERVIEW.mp3</pathurl>
@@ -3065,11 +3129,11 @@
           <clipitem id="clipitem-audio-23">
             <name>HOOFDINTERVIEW</name>
             <enabled>TRUE</enabled>
-            <duration>625</duration>
-            <start>13471</start>
-            <end>14096</end>
-            <in>30686</in>
-            <out>31311</out>
+            <duration>686</duration>
+            <start>14209</start>
+            <end>14895</end>
+            <in>29039</in>
+            <out>29725</out>
             <file id="file-r51cbdcc5279a132e3486ccdd8d46b121">
               <name>HOOFDINTERVIEW.mp3</name>
               <pathurl>file:///Users/benzoref/Documents/1.%20VIDEO/het%20pleintje%20van%202026/Afl%201/rrfilms_hoofdinterview-mp3_2026-05-05_1033/HOOFDINTERVIEW.mp3</pathurl>
@@ -3109,11 +3173,11 @@
           <clipitem id="clipitem-audio-24">
             <name>HOOFDINTERVIEW</name>
             <enabled>TRUE</enabled>
-            <duration>605</duration>
-            <start>14096</start>
-            <end>14701</end>
-            <in>58725</in>
-            <out>59330</out>
+            <duration>625</duration>
+            <start>14895</start>
+            <end>15520</end>
+            <in>30686</in>
+            <out>31311</out>
             <file id="file-r51cbdcc5279a132e3486ccdd8d46b121">
               <name>HOOFDINTERVIEW.mp3</name>
               <pathurl>file:///Users/benzoref/Documents/1.%20VIDEO/het%20pleintje%20van%202026/Afl%201/rrfilms_hoofdinterview-mp3_2026-05-05_1033/HOOFDINTERVIEW.mp3</pathurl>
@@ -3153,11 +3217,11 @@
           <clipitem id="clipitem-audio-25">
             <name>HOOFDINTERVIEW</name>
             <enabled>TRUE</enabled>
-            <duration>1043</duration>
-            <start>14701</start>
-            <end>15744</end>
-            <in>61178</in>
-            <out>62221</out>
+            <duration>605</duration>
+            <start>15520</start>
+            <end>16125</end>
+            <in>58725</in>
+            <out>59330</out>
             <file id="file-r51cbdcc5279a132e3486ccdd8d46b121">
               <name>HOOFDINTERVIEW.mp3</name>
               <pathurl>file:///Users/benzoref/Documents/1.%20VIDEO/het%20pleintje%20van%202026/Afl%201/rrfilms_hoofdinterview-mp3_2026-05-05_1033/HOOFDINTERVIEW.mp3</pathurl>
@@ -3197,11 +3261,11 @@
           <clipitem id="clipitem-audio-26">
             <name>HOOFDINTERVIEW</name>
             <enabled>TRUE</enabled>
-            <duration>743</duration>
-            <start>15744</start>
-            <end>16487</end>
-            <in>69125</in>
-            <out>69868</out>
+            <duration>1043</duration>
+            <start>16125</start>
+            <end>17168</end>
+            <in>61178</in>
+            <out>62221</out>
             <file id="file-r51cbdcc5279a132e3486ccdd8d46b121">
               <name>HOOFDINTERVIEW.mp3</name>
               <pathurl>file:///Users/benzoref/Documents/1.%20VIDEO/het%20pleintje%20van%202026/Afl%201/rrfilms_hoofdinterview-mp3_2026-05-05_1033/HOOFDINTERVIEW.mp3</pathurl>
@@ -3241,11 +3305,11 @@
           <clipitem id="clipitem-audio-27">
             <name>HOOFDINTERVIEW</name>
             <enabled>TRUE</enabled>
-            <duration>645</duration>
-            <start>16487</start>
-            <end>17132</end>
-            <in>53059</in>
-            <out>53704</out>
+            <duration>743</duration>
+            <start>17168</start>
+            <end>17911</end>
+            <in>69125</in>
+            <out>69868</out>
             <file id="file-r51cbdcc5279a132e3486ccdd8d46b121">
               <name>HOOFDINTERVIEW.mp3</name>
               <pathurl>file:///Users/benzoref/Documents/1.%20VIDEO/het%20pleintje%20van%202026/Afl%201/rrfilms_hoofdinterview-mp3_2026-05-05_1033/HOOFDINTERVIEW.mp3</pathurl>
@@ -3285,11 +3349,11 @@
           <clipitem id="clipitem-audio-28">
             <name>HOOFDINTERVIEW</name>
             <enabled>TRUE</enabled>
-            <duration>812</duration>
-            <start>17132</start>
-            <end>17944</end>
-            <in>70894</in>
-            <out>71706</out>
+            <duration>645</duration>
+            <start>17911</start>
+            <end>18556</end>
+            <in>53059</in>
+            <out>53704</out>
             <file id="file-r51cbdcc5279a132e3486ccdd8d46b121">
               <name>HOOFDINTERVIEW.mp3</name>
               <pathurl>file:///Users/benzoref/Documents/1.%20VIDEO/het%20pleintje%20van%202026/Afl%201/rrfilms_hoofdinterview-mp3_2026-05-05_1033/HOOFDINTERVIEW.mp3</pathurl>
@@ -3329,11 +3393,11 @@
           <clipitem id="clipitem-audio-29">
             <name>HOOFDINTERVIEW</name>
             <enabled>TRUE</enabled>
-            <duration>243</duration>
-            <start>17944</start>
-            <end>18187</end>
-            <in>58447</in>
-            <out>58690</out>
+            <duration>812</duration>
+            <start>18556</start>
+            <end>19368</end>
+            <in>70894</in>
+            <out>71706</out>
             <file id="file-r51cbdcc5279a132e3486ccdd8d46b121">
               <name>HOOFDINTERVIEW.mp3</name>
               <pathurl>file:///Users/benzoref/Documents/1.%20VIDEO/het%20pleintje%20van%202026/Afl%201/rrfilms_hoofdinterview-mp3_2026-05-05_1033/HOOFDINTERVIEW.mp3</pathurl>
@@ -3373,11 +3437,11 @@
           <clipitem id="clipitem-audio-30">
             <name>HOOFDINTERVIEW</name>
             <enabled>TRUE</enabled>
-            <duration>233</duration>
-            <start>18187</start>
-            <end>18420</end>
-            <in>81025</in>
-            <out>81258</out>
+            <duration>243</duration>
+            <start>19368</start>
+            <end>19611</end>
+            <in>58447</in>
+            <out>58690</out>
             <file id="file-r51cbdcc5279a132e3486ccdd8d46b121">
               <name>HOOFDINTERVIEW.mp3</name>
               <pathurl>file:///Users/benzoref/Documents/1.%20VIDEO/het%20pleintje%20van%202026/Afl%201/rrfilms_hoofdinterview-mp3_2026-05-05_1033/HOOFDINTERVIEW.mp3</pathurl>
@@ -3417,11 +3481,11 @@
           <clipitem id="clipitem-audio-31">
             <name>HOOFDINTERVIEW</name>
             <enabled>TRUE</enabled>
-            <duration>541</duration>
-            <start>18420</start>
-            <end>18961</end>
-            <in>86818</in>
-            <out>87359</out>
+            <duration>233</duration>
+            <start>19611</start>
+            <end>19844</end>
+            <in>81025</in>
+            <out>81258</out>
             <file id="file-r51cbdcc5279a132e3486ccdd8d46b121">
               <name>HOOFDINTERVIEW.mp3</name>
               <pathurl>file:///Users/benzoref/Documents/1.%20VIDEO/het%20pleintje%20van%202026/Afl%201/rrfilms_hoofdinterview-mp3_2026-05-05_1033/HOOFDINTERVIEW.mp3</pathurl>
@@ -3461,11 +3525,11 @@
           <clipitem id="clipitem-audio-32">
             <name>HOOFDINTERVIEW</name>
             <enabled>TRUE</enabled>
-            <duration>507</duration>
-            <start>18961</start>
-            <end>19468</end>
-            <in>86311</in>
-            <out>86818</out>
+            <duration>541</duration>
+            <start>19844</start>
+            <end>20385</end>
+            <in>86818</in>
+            <out>87359</out>
             <file id="file-r51cbdcc5279a132e3486ccdd8d46b121">
               <name>HOOFDINTERVIEW.mp3</name>
               <pathurl>file:///Users/benzoref/Documents/1.%20VIDEO/het%20pleintje%20van%202026/Afl%201/rrfilms_hoofdinterview-mp3_2026-05-05_1033/HOOFDINTERVIEW.mp3</pathurl>
@@ -3499,6 +3563,50 @@
               <mediatype>audio</mediatype>
               <trackindex>1</trackindex>
               <clipindex>32</clipindex>
+              <groupindex>1</groupindex>
+            </link>
+          </clipitem>
+          <clipitem id="clipitem-audio-33">
+            <name>HOOFDINTERVIEW</name>
+            <enabled>TRUE</enabled>
+            <duration>507</duration>
+            <start>20385</start>
+            <end>20892</end>
+            <in>86311</in>
+            <out>86818</out>
+            <file id="file-r51cbdcc5279a132e3486ccdd8d46b121">
+              <name>HOOFDINTERVIEW.mp3</name>
+              <pathurl>file:///Users/benzoref/Documents/1.%20VIDEO/het%20pleintje%20van%202026/Afl%201/rrfilms_hoofdinterview-mp3_2026-05-05_1033/HOOFDINTERVIEW.mp3</pathurl>
+              <rate>
+                <timebase>25</timebase>
+                <ntsc>FALSE</ntsc>
+              </rate>
+              <duration>91762</duration>
+              <media>
+                <audio>
+                  <samplecharacteristics>
+                    <samplerate>48000</samplerate>
+                    <sampledepth>16</sampledepth>
+                  </samplecharacteristics>
+                </audio>
+              </media>
+            </file>
+            <sourcetrack>
+              <mediatype>audio</mediatype>
+              <trackindex>1</trackindex>
+            </sourcetrack>
+            <channelcount>2</channelcount>
+            <link>
+              <linkclipref>clipitem-video-33</linkclipref>
+              <mediatype>video</mediatype>
+              <trackindex>1</trackindex>
+              <clipindex>33</clipindex>
+            </link>
+            <link>
+              <linkclipref>clipitem-audio-33</linkclipref>
+              <mediatype>audio</mediatype>
+              <trackindex>1</trackindex>
+              <clipindex>33</clipindex>
               <groupindex>1</groupindex>
             </link>
           </clipitem>
