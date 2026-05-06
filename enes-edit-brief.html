@@ -1170,6 +1170,38 @@
       line-height: 1.5;
     }
 
+    .viral-transcript-block {
+      padding: 14px 16px;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      background: var(--bg-soft);
+    }
+
+    .viral-transcript-list {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .viral-transcript-line {
+      margin: 0;
+      color: var(--text);
+      font-size: 0.91rem;
+      line-height: 1.7;
+    }
+
+    .viral-transcript-speaker {
+      display: inline-block;
+      min-width: 76px;
+      margin-right: 8px;
+      color: var(--muted);
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      vertical-align: baseline;
+    }
+
     .viral-card-foot {
       padding: 16px 24px;
       border-top: 1px solid var(--border);
@@ -1307,7 +1339,7 @@
               </button>
               <button class="tab-button" role="tab" aria-selected="false" aria-controls="panel-viral-shorts" id="tab-viral-shorts" data-tab-target="panel-viral-shorts">
                 <span class="tab-title">Viral Shorts</span>
-                <span class="tab-copy">Top 5 standalone clips met scores, hook-angles, uitleg en XML-download per short.</span>
+                <span class="tab-copy">Top 5 losse clips met scores, invalshoeken, uitleg, volledige transcript en XML per short.</span>
               </button>
             </div>
           </div>
@@ -2029,26 +2061,26 @@
           </section>
 
           <section class="content-panel" id="panel-viral-shorts" role="tabpanel" aria-labelledby="tab-viral-shorts">
-            <p class="eyebrow">Viral shortlist</p>
-            <h1>Viral Shorts: Enes</h1>
-            <p class="report-kicker">De eerdere run had de scoring al af, maar bleef hangen op een spinner. Hieronder staat die analyse nu echt uitgewerkt, inclusief XML-download per short.</p>
+            <p class="eyebrow">Shortlist</p>
+            <h1>Sterkste losse shorts: Enes</h1>
+            <p class="report-kicker">Vijf losse momenten uit het hoofdinterview, met score, redactionele duiding, volledige cliptranscript en XML per selectie.</p>
             <div class="transcript-intro">
               <div class="transcript-card">
                 <h3>Wat je hier ziet</h3>
-                <p>Dit zijn de vijf sterkste standalone momenten uit het hoofdinterview, gescoord op hook, emotie, zelfstandigheid, quote-waarde en narrative arc. Per kaart zie je meteen waarom het moment werkt en hoe je het zou kunnen framen voor social.</p>
+                <p>Dit zijn de vijf sterkste losse momenten uit het hoofdinterview, gescoord op opening, emotie, zelfstandigheid, citaatkracht en verhaalboog. Per kaart staat nu ook de volledige cliptranscript, zodat je meteen ziet of een moment schoon begint en wat er precies in de selectie zit.</p>
                 <div class="pill-row">
                   <span class="pill"><b>5</b> shorts geselecteerd</span>
-                  <span class="pill"><b>41.2/50</b> gemiddelde score</span>
-                  <span class="pill"><b>Premiere XML</b> per clip beschikbaar</span>
+                  <span class="pill"><b>41,2/50</b> gemiddelde score</span>
+                  <span class="pill"><b>XML per clip</b> direct klaar</span>
                 </div>
               </div>
               <div class="transcript-card">
                 <h3>Hoe je dit gebruikt</h3>
-                <p>De editor kan per kaart meteen het XML-bestand downloaden en importeren in Premiere. De regie kan hier vooral naar de hook-angle, quote en titelrichtingen kijken om te bepalen welk moment het eerst de wereld in moet.</p>
+                <p>De XML is vooral voor snelheid in Premiere. De tekstsuggesties hieronder zijn herschreven naar normaal Nederlands: zie ze als redactionele startpunten, niet als slogans die je letterlijk moet overnemen.</p>
                 <div class="pill-row">
-                  <span class="pill"><b>Hook</b> eerste aandacht</span>
-                  <span class="pill"><b>Quote</b> deelbaarheid</span>
-                  <span class="pill"><b>Arc</b> compleet verhaal</span>
+                  <span class="pill"><b>Opening</b> eerste aandacht</span>
+                  <span class="pill"><b>Citaat</b> wat blijft hangen</span>
+                  <span class="pill"><b>Verhaalboog</b> compleet moment</span>
                 </div>
               </div>
             </div>
@@ -2057,17 +2089,17 @@
                 <div class="viral-card-head">
                   <div class="viral-rank viral-rank-1">#1</div>
                   <div class="viral-label-block">
-                    <p class="viral-label">Contract signed in hospital</p>
-                    <div class="viral-timecode">00:40:56.42–00:41:50.61 · Personal Story</div>
+                    <p class="viral-label">Uit de MRI gehaald voor zijn Roma-contract</p>
+                    <div class="viral-timecode">00:40:56.42–00:41:50.61 · Persoonlijk verhaal</div>
                   </div>
-                  <span class="viral-grade grade-viral">🔥 Viral</span>
+                  <span class="viral-grade grade-viral">Uitblinker</span>
                 </div>
                 <div class="viral-card-body">
                   <div class="viral-scores">
                     <div class="viral-score-item">
                       <div class="viral-score-val">9</div>
                       <div class="viral-score-bar-wrap"><div class="viral-score-bar" style="width: 90%;"></div></div>
-                      <div class="viral-score-lbl">Hook</div>
+                      <div class="viral-score-lbl">Opening</div>
                     </div>
                     <div class="viral-score-item">
                       <div class="viral-score-val">8</div>
@@ -2077,30 +2109,38 @@
                     <div class="viral-score-item">
                       <div class="viral-score-val">8</div>
                       <div class="viral-score-bar-wrap"><div class="viral-score-bar" style="width: 80%;"></div></div>
-                      <div class="viral-score-lbl">Standalone</div>
+                      <div class="viral-score-lbl">Zelfstandig</div>
                     </div>
                     <div class="viral-score-item">
                       <div class="viral-score-val">8</div>
                       <div class="viral-score-bar-wrap"><div class="viral-score-bar" style="width: 80%;"></div></div>
-                      <div class="viral-score-lbl">Quote</div>
+                      <div class="viral-score-lbl">Citaat</div>
                     </div>
                     <div class="viral-score-item">
                       <div class="viral-score-val">9</div>
                       <div class="viral-score-bar-wrap"><div class="viral-score-bar" style="width: 90%;"></div></div>
-                      <div class="viral-score-lbl">Arc</div>
+                      <div class="viral-score-lbl">Verhaal</div>
                     </div>
                   </div>
                   <div class="viral-total">42<span>/50</span></div>
                   <blockquote class="viral-quote">Ik had nog infuus aan mijn arm. Ik had geen shirt aan. Toen moest ik mijn contract tekenen.</blockquote>
-                  <p class="viral-reason">Dit is een volledig zelfdragend verhaal: privévliegtuig, race tegen de klok, MRI, infuus en een contract met Roma. Je hoeft niets uit de aflevering te kennen om meteen te snappen waarom dit moment blijft hangen.</p>
+                  <p class="viral-reason">Dit moment heeft meteen beeld, tempo en inzet: deadline day, een privévliegtuig, de medische keuring, de MRI en dan alsnog moeten tekenen. Je hebt geen voorkennis nodig; het verhaal draagt zichzelf volledig.</p>
+                  <div class="viral-transcript-block">
+                    <div class="viral-onscreen-label">Volledige cliptranscript</div>
+                    <div class="viral-transcript-list">
+                      <p class="viral-transcript-line"><span class="viral-transcript-speaker">Enes</span>Stond er een vliegtuig klaar voor mij en die zou ons brengen van Amsterdam naar Rome. Dat was volgens mij om vier uur, maar dat was ook deadline dag. Dus om twaalf uur moest alles eigenlijk geregeld zijn. Dus we hadden ook een race tegen de klok. Dat was volgens mij vier uur vliegen, zes uur aankomen.</p>
+                      <p class="viral-transcript-line"><span class="viral-transcript-speaker">Enes</span>Dan had je allemaal pers op het vliegveld, maar daar hadden we geen tijd voor. Zoals foto's maken, taxi stappen en de medische keuring doen. Die heb ik ook heel snel moeten doen.</p>
+                      <p class="viral-transcript-line"><span class="viral-transcript-speaker">Enes</span>Toen werd ik in het ziekenhuis uit de MRI-scan gehaald. Ik had nog infuus aan mijn arm. Ik had geen shirt aan, ik had geen kleding aan. Toen moest ik mijn contract tekenen op dat moment.</p>
+                    </div>
+                  </div>
                   <div class="viral-titles">
-                    <div class="viral-title-row"><span class="viral-title-type">Curiosity gap</span><span class="viral-title-text">Hoe Enes zijn Roma-contract tekende zonder shirt, met een infuus aan zijn arm</span></div>
-                    <div class="viral-title-row"><span class="viral-title-type">Bold claim</span><span class="viral-title-text">Een privévliegtuig, een MRI, een infuus. Zo tekende hij zijn Roma-contract.</span></div>
-                    <div class="viral-title-row"><span class="viral-title-type">Emotional</span><span class="viral-title-text">Ze haalden hem midden uit de MRI. Hij had nog bloed aan zijn arm. Maar hij tekende.</span></div>
+                    <div class="viral-title-row"><span class="viral-title-type">Titel 1</span><span class="viral-title-text">Ze haalden hem uit de MRI om zijn Roma-contract te tekenen</span></div>
+                    <div class="viral-title-row"><span class="viral-title-type">Titel 2</span><span class="viral-title-text">Hij tekende bij Roma met een infuus nog in zijn arm</span></div>
+                    <div class="viral-title-row"><span class="viral-title-type">Titel 3</span><span class="viral-title-text">Van Amsterdam naar Rome, en recht het ziekenhuis in</span></div>
                   </div>
                   <div class="viral-onscreen">
-                    <div class="viral-onscreen-item"><div class="viral-onscreen-label">Opening card</div><div class="viral-onscreen-text">Ze haalden hem uit de MRI om te tekenen</div></div>
-                    <div class="viral-onscreen-item"><div class="viral-onscreen-label">Lower third</div><div class="viral-onscreen-text">INFUUS. CONTRACT. ROMA.</div></div>
+                    <div class="viral-onscreen-item"><div class="viral-onscreen-label">Openingskaart</div><div class="viral-onscreen-text">Ze haalden hem uit de MRI om te tekenen</div></div>
+                    <div class="viral-onscreen-item"><div class="viral-onscreen-label">Ondertitel</div><div class="viral-onscreen-text">Hij tekende terwijl het infuus nog in zijn arm zat</div></div>
                   </div>
                 </div>
                 <div class="viral-card-foot"><a class="btn-download" href="roughcuts/viral_clip_1_20260506_104406.xml" download="viral_clip_1_20260506_104406.xml">Download XML</a></div>
@@ -2110,17 +2150,17 @@
                 <div class="viral-card-head">
                   <div class="viral-rank viral-rank-2">#2</div>
                   <div class="viral-label-block">
-                    <p class="viral-label">Mom refused promotion for him</p>
-                    <div class="viral-timecode">00:03:48.91–00:04:46.36 · Personal Story</div>
+                    <p class="viral-label">Zijn moeder wees een promotie af voor hem</p>
+                    <div class="viral-timecode">00:03:48.91–00:04:46.36 · Persoonlijk verhaal</div>
                   </div>
-                  <span class="viral-grade grade-viral">🔥 Viral</span>
+                  <span class="viral-grade grade-viral">Uitblinker</span>
                 </div>
                 <div class="viral-card-body">
                   <div class="viral-scores">
                     <div class="viral-score-item">
                       <div class="viral-score-val">8</div>
                       <div class="viral-score-bar-wrap"><div class="viral-score-bar" style="width: 80%;"></div></div>
-                      <div class="viral-score-lbl">Hook</div>
+                      <div class="viral-score-lbl">Opening</div>
                     </div>
                     <div class="viral-score-item">
                       <div class="viral-score-val">9</div>
@@ -2130,30 +2170,38 @@
                     <div class="viral-score-item">
                       <div class="viral-score-val">8</div>
                       <div class="viral-score-bar-wrap"><div class="viral-score-bar" style="width: 80%;"></div></div>
-                      <div class="viral-score-lbl">Standalone</div>
+                      <div class="viral-score-lbl">Zelfstandig</div>
                     </div>
                     <div class="viral-score-item">
                       <div class="viral-score-val">9</div>
                       <div class="viral-score-bar-wrap"><div class="viral-score-bar" style="width: 90%;"></div></div>
-                      <div class="viral-score-lbl">Quote</div>
+                      <div class="viral-score-lbl">Citaat</div>
                     </div>
                     <div class="viral-score-item">
                       <div class="viral-score-val">8</div>
                       <div class="viral-score-bar-wrap"><div class="viral-score-bar" style="width: 80%;"></div></div>
-                      <div class="viral-score-lbl">Arc</div>
+                      <div class="viral-score-lbl">Verhaal</div>
                     </div>
                   </div>
                   <div class="viral-total">42<span>/50</span></div>
                   <blockquote class="viral-quote">Ze kon manager worden. Die heeft ze geweigerd. Omdat ze mij had.</blockquote>
-                  <p class="viral-reason">De kracht hier is eenvoud. Eén opoffering, één moeder, één consequentie. Je voelt meteen wat er thuis is gegeven zodat hij dit leven kon najagen, en dat maakt het universeel deelbaar.</p>
+                  <p class="viral-reason">Hier zit alles in één rechte lijn: een moeder die een carrièrekans laat lopen, een zoon die dat jaren later terugziet als fundament van zijn loopbaan. Het is concreet, invoelbaar en direct deelbaar.</p>
+                  <div class="viral-transcript-block">
+                    <div class="viral-onscreen-label">Volledige cliptranscript</div>
+                    <div class="viral-transcript-list">
+                      <p class="viral-transcript-line"><span class="viral-transcript-speaker">Enes</span>Volgens mij kon ze daar manager worden. Dat was toch een goede baan. Als jonge Marokkaanse vrouw. En die heeft ze eigenlijk geweigerd. Omdat ze mij had. En ze moest voor mij zorgen. En ja, dat was een grote beslissing op dat moment voor haar.</p>
+                      <p class="viral-transcript-line"><span class="viral-transcript-speaker">Enes</span>Maar ik ben altijd dankbaar dat ze die keuze gemaakt heeft. En ik denk dat het wel heeft uitbetaald. Heel belangrijk.</p>
+                      <p class="viral-transcript-line"><span class="viral-transcript-speaker">Enes</span>Mijn ouders zijn heel belangrijk geweest voor mij in mijn jongerencarrière. Je ouders zorgen voor je, die voeden je op. Dus als ze er niet zijn, dan is dat moeilijk. En zowel mijn vader als mijn moeder zijn er altijd voor me geweest. Allebei op een eigen manier.</p>
+                    </div>
+                  </div>
                   <div class="viral-titles">
-                    <div class="viral-title-row"><span class="viral-title-type">Curiosity gap</span><span class="viral-title-text">Wat zijn moeder opgaf zodat hij profvoetballer kon worden</span></div>
-                    <div class="viral-title-row"><span class="viral-title-type">Bold claim</span><span class="viral-title-text">Ze weigerde haar promotie tot manager. Omdat ze hem had. Het heeft uitbetaald.</span></div>
-                    <div class="viral-title-row"><span class="viral-title-type">Emotional</span><span class="viral-title-text">Ze had manager kunnen worden. Ze zei nee. Vanwege hem.</span></div>
+                    <div class="viral-title-row"><span class="viral-title-type">Titel 1</span><span class="viral-title-text">Zijn moeder kon manager worden. Ze koos voor haar zoon.</span></div>
+                    <div class="viral-title-row"><span class="viral-title-type">Titel 2</span><span class="viral-title-text">Wat zijn moeder opgaf zodat hij dit kon bereiken</span></div>
+                    <div class="viral-title-row"><span class="viral-title-type">Titel 3</span><span class="viral-title-text">Ze zei nee tegen promotie om voor hem te zorgen</span></div>
                   </div>
                   <div class="viral-onscreen">
-                    <div class="viral-onscreen-item"><div class="viral-onscreen-label">Opening card</div><div class="viral-onscreen-text">Zijn moeder kon manager worden. Ze koos anders.</div></div>
-                    <div class="viral-onscreen-item"><div class="viral-onscreen-label">Lower third</div><div class="viral-onscreen-text">ZE ZEGDE NEE VOOR JOU</div></div>
+                    <div class="viral-onscreen-item"><div class="viral-onscreen-label">Openingskaart</div><div class="viral-onscreen-text">Zijn moeder kon manager worden bij de bank</div></div>
+                    <div class="viral-onscreen-item"><div class="viral-onscreen-label">Ondertitel</div><div class="viral-onscreen-text">Ze wees die promotie af om voor hem te zorgen</div></div>
                   </div>
                 </div>
                 <div class="viral-card-foot"><a class="btn-download" href="roughcuts/viral_clip_2_20260506_104406.xml" download="viral_clip_2_20260506_104406.xml">Download XML</a></div>
@@ -2163,17 +2211,17 @@
                 <div class="viral-card-head">
                   <div class="viral-rank viral-rank-3">#3</div>
                   <div class="viral-label-block">
-                    <p class="viral-label">Injury showed true friends</p>
-                    <div class="viral-timecode">00:20:31.27–00:21:28.91 · Bold Claim</div>
+                    <p class="viral-label">Zijn blessure liet zien wie echt overbleef</p>
+                    <div class="viral-timecode">00:20:31.27–00:21:28.91 · Harde uitspraak</div>
                   </div>
-                  <span class="viral-grade grade-viral">🔥 Viral</span>
+                  <span class="viral-grade grade-strong">Sterke kandidaat</span>
                 </div>
                 <div class="viral-card-body">
                   <div class="viral-scores">
                     <div class="viral-score-item">
                       <div class="viral-score-val">7</div>
                       <div class="viral-score-bar-wrap"><div class="viral-score-bar" style="width: 70%;"></div></div>
-                      <div class="viral-score-lbl">Hook</div>
+                      <div class="viral-score-lbl">Opening</div>
                     </div>
                     <div class="viral-score-item">
                       <div class="viral-score-val">8</div>
@@ -2183,30 +2231,41 @@
                     <div class="viral-score-item">
                       <div class="viral-score-val">8</div>
                       <div class="viral-score-bar-wrap"><div class="viral-score-bar" style="width: 80%;"></div></div>
-                      <div class="viral-score-lbl">Standalone</div>
+                      <div class="viral-score-lbl">Zelfstandig</div>
                     </div>
                     <div class="viral-score-item">
                       <div class="viral-score-val">9</div>
                       <div class="viral-score-bar-wrap"><div class="viral-score-bar" style="width: 90%;"></div></div>
-                      <div class="viral-score-lbl">Quote</div>
+                      <div class="viral-score-lbl">Citaat</div>
                     </div>
                     <div class="viral-score-item">
                       <div class="viral-score-val">8</div>
                       <div class="viral-score-bar-wrap"><div class="viral-score-bar" style="width: 80%;"></div></div>
-                      <div class="viral-score-lbl">Arc</div>
+                      <div class="viral-score-lbl">Verhaal</div>
                     </div>
                   </div>
                   <div class="viral-total">40<span>/50</span></div>
                   <blockquote class="viral-quote">Als je geblesseerd bent, heb je niet meer zoveel vrienden als je dacht.</blockquote>
-                  <p class="viral-reason">Dit werkt omdat het groter is dan voetbal. Het voelt als een harde, rustige waarheid waar bijna iedereen zich iets bij kan voorstellen. Daardoor is het meteen een quote die buiten de aflevering kan leven.</p>
+                  <p class="viral-reason">De kracht is dat dit niet alleen over voetbal gaat. Het is een rustige, harde observatie over succes, zichtbaarheid en vriendschap. Daardoor voelt het als een quote die ook buiten sport blijft hangen.</p>
+                  <div class="viral-transcript-block">
+                    <div class="viral-onscreen-label">Volledige cliptranscript</div>
+                    <div class="viral-transcript-list">
+                      <p class="viral-transcript-line"><span class="viral-transcript-speaker">Interviewer</span>Die periode heeft me geleerd dat vrienden...</p>
+                      <p class="viral-transcript-line"><span class="viral-transcript-speaker">Enes</span>Dat vrienden, of dat ik zelf sterk kan zijn?</p>
+                      <p class="viral-transcript-line"><span class="viral-transcript-speaker">Interviewer</span>Of alleen het laatste stukje?</p>
+                      <p class="viral-transcript-line"><span class="viral-transcript-speaker">Enes</span>Dat laatste stukje, wat heb ik van mij gezien? Die periode heeft me geleerd dat je toch niet zo heel veel vrienden hebt als je dacht. Op dat moment voetbalde ik niet. Ik was niet echt meer in de spotlights. En dan vallen heel veel mensen ook weg uit je leven. Daar ben ik blij mee. Want het heeft me laten inzien dat je je cirkel goed moet kiezen en de mensen om je heen goed moet kiezen. Daar ben ik dankbaar voor.</p>
+                      <p class="viral-transcript-line"><span class="viral-transcript-speaker">Interviewer</span>Hoe anders maak je nu die keuzes? Waar let je op?</p>
+                      <p class="viral-transcript-line"><span class="viral-transcript-speaker">Enes</span>Iemands intenties. Als ik nu keuzes maak, dan let ik eigenlijk op hoe goed ik iemand ken.</p>
+                    </div>
+                  </div>
                   <div class="viral-titles">
-                    <div class="viral-title-row"><span class="viral-title-type">Curiosity gap</span><span class="viral-title-text">Wat zijn blessure hem leerde over zijn vrienden</span></div>
-                    <div class="viral-title-row"><span class="viral-title-type">Bold claim</span><span class="viral-title-text">Als je niet meer in de spotlights staat, heb je opeens veel minder vrienden</span></div>
-                    <div class="viral-title-row"><span class="viral-title-type">Emotional</span><span class="viral-title-text">Hij lag in een rolstoel. Zijn vrienden verdwenen. Hij zegt nu: ik ben er blij mee.</span></div>
+                    <div class="viral-title-row"><span class="viral-title-type">Titel 1</span><span class="viral-title-text">Als je geblesseerd bent, leer je wie echt is</span></div>
+                    <div class="viral-title-row"><span class="viral-title-type">Titel 2</span><span class="viral-title-text">Toen hij uit beeld verdween, verdwenen ook de vrienden</span></div>
+                    <div class="viral-title-row"><span class="viral-title-type">Titel 3</span><span class="viral-title-text">Zijn blessure maakte zijn kring kleiner. Daar is hij blij om.</span></div>
                   </div>
                   <div class="viral-onscreen">
-                    <div class="viral-onscreen-item"><div class="viral-onscreen-label">Opening card</div><div class="viral-onscreen-text">Zijn blessure liet zien wie zijn echte vrienden waren</div></div>
-                    <div class="viral-onscreen-item"><div class="viral-onscreen-label">Lower third</div><div class="viral-onscreen-text">GEBLESSEERD. ALLEEN.</div></div>
+                    <div class="viral-onscreen-item"><div class="viral-onscreen-label">Openingskaart</div><div class="viral-onscreen-text">Zijn blessure liet zien wie echt bij hem bleef</div></div>
+                    <div class="viral-onscreen-item"><div class="viral-onscreen-label">Ondertitel</div><div class="viral-onscreen-text">Als je niet speelt, verdwijnen veel mensen vanzelf</div></div>
                   </div>
                 </div>
                 <div class="viral-card-foot"><a class="btn-download" href="roughcuts/viral_clip_3_20260506_104406.xml" download="viral_clip_3_20260506_104406.xml">Download XML</a></div>
@@ -2216,17 +2275,17 @@
                 <div class="viral-card-head">
                   <div class="viral-rank">#4</div>
                   <div class="viral-label-block">
-                    <p class="viral-label">Corona injury, couldn't walk</p>
-                    <div class="viral-timecode">00:18:30.85–00:19:27.03 · Emotional</div>
+                    <p class="viral-label">Op zijn dieptepunt kon hij niet eens lopen</p>
+                    <div class="viral-timecode">00:18:30.85–00:19:27.03 · Emotioneel moment</div>
                   </div>
-                  <span class="viral-grade grade-viral">🔥 Viral</span>
+                  <span class="viral-grade grade-strong">Sterke kandidaat</span>
                 </div>
                 <div class="viral-card-body">
                   <div class="viral-scores">
                     <div class="viral-score-item">
                       <div class="viral-score-val">7</div>
                       <div class="viral-score-bar-wrap"><div class="viral-score-bar" style="width: 70%;"></div></div>
-                      <div class="viral-score-lbl">Hook</div>
+                      <div class="viral-score-lbl">Opening</div>
                     </div>
                     <div class="viral-score-item">
                       <div class="viral-score-val">9</div>
@@ -2236,30 +2295,40 @@
                     <div class="viral-score-item">
                       <div class="viral-score-val">7</div>
                       <div class="viral-score-bar-wrap"><div class="viral-score-bar" style="width: 70%;"></div></div>
-                      <div class="viral-score-lbl">Standalone</div>
+                      <div class="viral-score-lbl">Zelfstandig</div>
                     </div>
                     <div class="viral-score-item">
                       <div class="viral-score-val">8</div>
                       <div class="viral-score-bar-wrap"><div class="viral-score-bar" style="width: 80%;"></div></div>
-                      <div class="viral-score-lbl">Quote</div>
+                      <div class="viral-score-lbl">Citaat</div>
                     </div>
                     <div class="viral-score-item">
                       <div class="viral-score-val">9</div>
                       <div class="viral-score-bar-wrap"><div class="viral-score-bar" style="width: 90%;"></div></div>
-                      <div class="viral-score-lbl">Arc</div>
+                      <div class="viral-score-lbl">Verhaal</div>
                     </div>
                   </div>
                   <div class="viral-total">40<span>/50</span></div>
                   <blockquote class="viral-quote">Ik kon niet eens lopen. Kan ik ooit nog voetballen?</blockquote>
-                  <p class="viral-reason">Dit is het laagste punt van zijn verhaal in één zin. Rolstoel, corona en twijfel aan zijn hele toekomst zitten hier allemaal compact in, waardoor het moment zonder extra setup al veel emotioneel gewicht draagt.</p>
+                  <p class="viral-reason">Dit is het laagste punt in zijn verhaal, zonder franje verteld: blessure, corona, isolatie, rolstoel en twijfel. Juist doordat hij het klein houdt, komt het hard binnen.</p>
+                  <div class="viral-transcript-block">
+                    <div class="viral-onscreen-label">Volledige cliptranscript</div>
+                    <div class="viral-transcript-list">
+                      <p class="viral-transcript-line"><span class="viral-transcript-speaker">Enes</span>En toen heb ik er heel lang uitgelegen. En het was ook nog in de corona, dus dat maakte het nog lastiger.</p>
+                      <p class="viral-transcript-line"><span class="viral-transcript-speaker">Interviewer</span>Hoe was die periode voor jou?</p>
+                      <p class="viral-transcript-line"><span class="viral-transcript-speaker">Enes</span>Een hele lastige periode. Ik denk wel de lastigste die ik in mijn carrière heb gehad. Je was eruit, je was geblesseerd. En toen kwam corona ook nog, dus niemand mocht trainen op de club. Dus dan heb ik echt een aantal maanden alleen één op één met een fysio mogen trainen daar.</p>
+                      <p class="viral-transcript-line"><span class="viral-transcript-speaker">Enes</span>Op afstand natuurlijk, maar je hebt geen afleiding om je heen. Buiten het voetbal kon je ook niks doen, want alles was dicht. Dus het was echt alleen maar in mijn rolstoel en op mijn krukken trainen naar huis en thuis zitten.</p>
+                      <p class="viral-transcript-line"><span class="viral-transcript-speaker">Enes</span>Ja, je bent nog jong. Je hebt nog nooit zoiets meegemaakt. Je gaat heel veel denken. Kan ik ooit nog voetballen? Want op dat moment kon ik niks. Ik kon niet eens lopen.</p>
+                    </div>
+                  </div>
                   <div class="viral-titles">
-                    <div class="viral-title-row"><span class="viral-title-type">Curiosity gap</span><span class="viral-title-text">Waarom Enes dacht dat hij nooit meer zou voetballen</span></div>
-                    <div class="viral-title-row"><span class="viral-title-type">Bold claim</span><span class="viral-title-text">Hij lag in een rolstoel tijdens corona en wist niet of hij ooit nog zou voetballen</span></div>
-                    <div class="viral-title-row"><span class="viral-title-type">Emotional</span><span class="viral-title-text">Hij was 18. Geblesseerd. Corona. Hij kon niet eens lopen meer.</span></div>
+                    <div class="viral-title-row"><span class="viral-title-type">Titel 1</span><span class="viral-title-text">Hij zat in een rolstoel en dacht: kan ik ooit nog terugkomen?</span></div>
+                    <div class="viral-title-row"><span class="viral-title-type">Titel 2</span><span class="viral-title-text">Geblesseerd, corona, geen afleiding, geen voetbal</span></div>
+                    <div class="viral-title-row"><span class="viral-title-type">Titel 3</span><span class="viral-title-text">Op zijn achttiende kon hij niet eens lopen</span></div>
                   </div>
                   <div class="viral-onscreen">
-                    <div class="viral-onscreen-item"><div class="viral-onscreen-label">Opening card</div><div class="viral-onscreen-text">Hij was 18. In een rolstoel. Tijdens corona.</div></div>
-                    <div class="viral-onscreen-item"><div class="viral-onscreen-label">Lower third</div><div class="viral-onscreen-text">KAN IK NOG VOETBALLEN?</div></div>
+                    <div class="viral-onscreen-item"><div class="viral-onscreen-label">Openingskaart</div><div class="viral-onscreen-text">Hij was jong, geblesseerd en zat thuis in een rolstoel</div></div>
+                    <div class="viral-onscreen-item"><div class="viral-onscreen-label">Ondertitel</div><div class="viral-onscreen-text">Toen vroeg hij zich af of hij ooit nog zou voetballen</div></div>
                   </div>
                 </div>
                 <div class="viral-card-foot"><a class="btn-download" href="roughcuts/viral_clip_4_20260506_104406.xml" download="viral_clip_4_20260506_104406.xml">Download XML</a></div>
@@ -2269,17 +2338,17 @@
                 <div class="viral-card-head">
                   <div class="viral-rank">#5</div>
                   <div class="viral-label-block">
-                    <p class="viral-label">Mom's video makes him cry</p>
-                    <div class="viral-timecode">01:00:23.11–01:01:10.23 · Emotional</div>
+                    <p class="viral-label">Eén zin van zijn moeder brak hem</p>
+                    <div class="viral-timecode">01:00:23.11–01:01:10.23 · Emotionele payoff</div>
                   </div>
-                  <span class="viral-grade grade-viral">🔥 Viral</span>
+                  <span class="viral-grade grade-strong">Sterke kandidaat</span>
                 </div>
                 <div class="viral-card-body">
                   <div class="viral-scores">
                     <div class="viral-score-item">
                       <div class="viral-score-val">7</div>
                       <div class="viral-score-bar-wrap"><div class="viral-score-bar" style="width: 70%;"></div></div>
-                      <div class="viral-score-lbl">Hook</div>
+                      <div class="viral-score-lbl">Opening</div>
                     </div>
                     <div class="viral-score-item">
                       <div class="viral-score-val">9</div>
@@ -2289,31 +2358,43 @@
                     <div class="viral-score-item">
                       <div class="viral-score-val">7</div>
                       <div class="viral-score-bar-wrap"><div class="viral-score-bar" style="width: 70%;"></div></div>
-                      <div class="viral-score-lbl">Standalone</div>
+                      <div class="viral-score-lbl">Zelfstandig</div>
                     </div>
                     <div class="viral-score-item">
                       <div class="viral-score-val">9</div>
                       <div class="viral-score-bar-wrap"><div class="viral-score-bar" style="width: 90%;"></div></div>
-                      <div class="viral-score-lbl">Quote</div>
+                      <div class="viral-score-lbl">Citaat</div>
                     </div>
                     <div class="viral-score-item">
                       <div class="viral-score-val">8</div>
                       <div class="viral-score-bar-wrap"><div class="viral-score-bar" style="width: 80%;"></div></div>
-                      <div class="viral-score-lbl">Arc</div>
+                      <div class="viral-score-lbl">Verhaal</div>
                     </div>
                   </div>
                   <div class="viral-total">40<span>/50</span></div>
                   <blockquote class="viral-quote">Dat is toch mooi als mama dit zegt. Daarvoor doe je het.</blockquote>
-                  <p class="viral-reason">Als emotionele payoff is dit bijna niet te missen: een speler die zichtbaar breekt na de woorden van zijn moeder. Het voelt als de samenvatting van de hele aflevering in één klein, menselijk moment.</p>
-                  <div class="viral-flag">Advies: het einde voelt nog iets te abrupt. Als dit de eerste short wordt, is een net langere uitloop waarschijnlijk beter.</div>
+                  <p class="viral-reason">Hier breekt de grote lijn van de aflevering open in één klein moment. Niet de prestatie, maar zijn reactie op zijn moeder maakt dit deelbaar en menselijk.</p>
+                  <div class="viral-flag">Advies: deze clip heeft een abrupte uitloop. Voor social is iets langer blijven hangen op zijn reactie waarschijnlijk beter.</div>
+                  <div class="viral-transcript-block">
+                    <div class="viral-onscreen-label">Volledige cliptranscript</div>
+                    <div class="viral-transcript-list">
+                      <p class="viral-transcript-line"><span class="viral-transcript-speaker">Enes</span>Het doet veel met me. Het maakt me emotioneel.</p>
+                      <p class="viral-transcript-line"><span class="viral-transcript-speaker">Interviewer</span>Ja, ik zag dat je echt moest verslikken. Ja. Waarom?</p>
+                      <p class="viral-transcript-line"><span class="viral-transcript-speaker">Enes</span>Dat is toch mooi als mama dit zegt. Daarvoor doe je het. Dus daar ben ik heel dankbaar voor.</p>
+                      <p class="viral-transcript-line"><span class="viral-transcript-speaker">Interviewer</span>Zou je zelf nog iets kwijt willen over jezelf? Over de dingen die je hebt meegemaakt? Of denk je: ik heb mijn verhaal kunnen vertellen? Heb je iets van je?</p>
+                      <p class="viral-transcript-line"><span class="viral-transcript-speaker">Enes</span>Nee. Nee, ik... Ik denk dat ik mijn verhaal wel goed heb kunnen vertellen. Ook waar ik ben opgegroeid. Wie belangrijk zijn voor mij in mijn leven. En hoe mijn carrière tot nu toe is verlopen.</p>
+                      <p class="viral-transcript-line"><span class="viral-transcript-speaker">Interviewer</span>Dankjewel, dat was het.</p>
+                      <p class="viral-transcript-line"><span class="viral-transcript-speaker">Enes</span>Dankjewel.</p>
+                    </div>
+                  </div>
                   <div class="viral-titles">
-                    <div class="viral-title-row"><span class="viral-title-type">Curiosity gap</span><span class="viral-title-text">Het moment waarop Enes zijn tranen niet meer kon houden</span></div>
-                    <div class="viral-title-row"><span class="viral-title-type">Bold claim</span><span class="viral-title-text">Mama stuurde een video. Hij kon zijn tranen niet houden. 'Daarvoor doe je het.'</span></div>
-                    <div class="viral-title-row"><span class="viral-title-type">Emotional</span><span class="viral-title-text">Zijn moeder stuurde een video. Hij moest verslikken. Dit is wat ze zei.</span></div>
+                    <div class="viral-title-row"><span class="viral-title-type">Titel 1</span><span class="viral-title-text">‘Daarvoor doe je het’: één zin van zijn moeder en hij schoot vol</span></div>
+                    <div class="viral-title-row"><span class="viral-title-type">Titel 2</span><span class="viral-title-text">De videoboodschap van zijn moeder brak hem op camera</span></div>
+                    <div class="viral-title-row"><span class="viral-title-type">Titel 3</span><span class="viral-title-text">Na alles wat thuis werd opgegeven, kwam dit het hardst binnen</span></div>
                   </div>
                   <div class="viral-onscreen">
-                    <div class="viral-onscreen-item"><div class="viral-onscreen-label">Opening card</div><div class="viral-onscreen-text">Mama stuurde een video. Hij kon zijn tranen niet houden.</div></div>
-                    <div class="viral-onscreen-item"><div class="viral-onscreen-label">Lower third</div><div class="viral-onscreen-text">DAARVOOR DOE JE HET</div></div>
+                    <div class="viral-onscreen-item"><div class="viral-onscreen-label">Openingskaart</div><div class="viral-onscreen-text">Zijn moeder stuurde een videoboodschap</div></div>
+                    <div class="viral-onscreen-item"><div class="viral-onscreen-label">Ondertitel</div><div class="viral-onscreen-text">‘Daarvoor doe je het’ en hij schoot vol</div></div>
                   </div>
                 </div>
                 <div class="viral-card-foot"><a class="btn-download" href="roughcuts/viral_clip_5_20260506_104406.xml" download="viral_clip_5_20260506_104406.xml">Download XML</a></div>
