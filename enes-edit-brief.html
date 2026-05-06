@@ -742,20 +742,16 @@
     .transcript-section {
       position: relative;
       border-top: 1px solid var(--border);
-      padding: 32px 20px 24px;
-      margin: 0 -20px;
+      padding-top: 32px;
+      margin-top: 32px;
       scroll-margin-top: 28px;
     }
 
     .transcript-section:first-of-type {
       border-top: 0;
+      margin-top: 0;
       padding-top: 0;
     }
-
-    .transcript-section:nth-of-type(4n+1) { background: rgba(225, 243, 254, 0.22); }
-    .transcript-section:nth-of-type(4n+2) { background: rgba(237, 243, 236, 0.26); }
-    .transcript-section:nth-of-type(4n+3) { background: rgba(251, 243, 219, 0.28); }
-    .transcript-section:nth-of-type(4n+0) { background: rgba(253, 235, 236, 0.24); }
 
     .section-meta {
       display: flex;
@@ -837,16 +833,10 @@
     .clip-card {
       border: 1px solid var(--border);
       border-radius: 12px;
-      background: rgba(255, 255, 255, 0.72);
-      backdrop-filter: blur(6px);
+      background: var(--surface-solid);
       padding: 18px 18px 20px;
       transition: transform 200ms ease, box-shadow 200ms ease;
     }
-
-    .transcript-section:nth-of-type(4n+1) .clip-card { border-color: rgba(31, 108, 159, 0.12); }
-    .transcript-section:nth-of-type(4n+2) .clip-card { border-color: rgba(52, 101, 56, 0.12); }
-    .transcript-section:nth-of-type(4n+3) .clip-card { border-color: rgba(149, 100, 0, 0.12); }
-    .transcript-section:nth-of-type(4n+0) .clip-card { border-color: rgba(159, 47, 45, 0.12); }
 
     .clip-card:hover {
       transform: translateY(-1px);
@@ -883,70 +873,6 @@
       line-height: 1.8;
     }
 
-    @media (max-width: 1080px) {
-      .doc-layout {
-        grid-template-columns: 1fr;
-      }
-
-      .sidebar {
-        border-right: 0;
-        border-bottom: 1px solid var(--border);
-      }
-
-      .content {
-        padding: 30px 22px 64px;
-      }
-    }
-
-    @media (max-width: 820px) {
-      .page {
-        padding: 12px 10px 64px;
-      }
-
-      .window-bar {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-
-      .transcript-intro {
-        grid-template-columns: 1fr;
-      }
-
-      .section-meta,
-      .clip-meta {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-
-      .section-range {
-        text-align: left;
-        white-space: normal;
-      }
-    }
-
-    /* ── Viral Shorts tab ───────────────────────────────────────── */
-    .viral-loading {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 14px;
-      padding: 80px 0;
-      color: var(--muted);
-      font-size: 0.95rem;
-    }
-
-    .viral-loading-spinner {
-      width: 28px;
-      height: 28px;
-      border: 2px solid var(--border);
-      border-top-color: var(--blue-text);
-      border-radius: 50%;
-      animation: spin 0.9s linear infinite;
-    }
-
-    @keyframes spin { to { transform: rotate(360deg); } }
-
     .viral-grid {
       display: flex;
       flex-direction: column;
@@ -975,25 +901,37 @@
       font-size: 1.5rem;
       font-weight: 700;
       color: var(--muted);
-      min-width: 32px;
+      min-width: 38px;
     }
 
-    .viral-rank-1 { color: #b45309; }
-    .viral-rank-2 { color: #6b7280; }
-    .viral-rank-3 { color: #92400e; }
+    .viral-rank-1 {
+      color: #b45309;
+    }
 
-    .viral-label-block { flex: 1; }
+    .viral-rank-2 {
+      color: #6b7280;
+    }
+
+    .viral-rank-3 {
+      color: #92400e;
+    }
+
+    .viral-label-block {
+      flex: 1;
+    }
 
     .viral-label {
+      margin: 0 0 4px;
       font-size: 1.05rem;
       font-weight: 600;
-      margin: 0 0 4px;
+      line-height: 1.35;
     }
 
     .viral-timecode {
+      color: var(--muted);
       font-family: "Geist Mono", monospace;
       font-size: 0.78rem;
-      color: var(--muted);
+      line-height: 1.5;
     }
 
     .viral-grade {
@@ -1004,10 +942,25 @@
       white-space: nowrap;
     }
 
-    .grade-viral  { background: #fef3c7; color: #92400e; }
-    .grade-strong { background: var(--blue-bg); color: var(--blue-text); }
-    .grade-decent { background: var(--green-bg); color: var(--green-text); }
-    .grade-weak   { background: var(--border); color: var(--muted); }
+    .grade-viral {
+      background: #fef3c7;
+      color: #92400e;
+    }
+
+    .grade-strong {
+      background: var(--blue-bg);
+      color: var(--blue-text);
+    }
+
+    .grade-decent {
+      background: var(--green-bg);
+      color: var(--green-text);
+    }
+
+    .grade-weak {
+      background: var(--border);
+      color: var(--muted);
+    }
 
     .viral-card-body {
       padding: 20px 24px;
@@ -1072,20 +1025,21 @@
     }
 
     .viral-quote {
+      margin: 0;
+      padding-left: 16px;
+      border-left: 3px solid var(--blue-bg);
+      color: var(--text);
       font-family: "Newsreader", "Instrument Serif", serif;
       font-size: 1.15rem;
       font-style: italic;
       line-height: 1.55;
-      color: var(--text);
-      border-left: 3px solid var(--blue-bg);
-      padding-left: 16px;
-      margin: 0;
     }
 
     .viral-reason {
-      font-size: 0.92rem;
-      color: var(--muted);
       margin: 0;
+      color: var(--muted);
+      font-size: 0.92rem;
+      line-height: 1.75;
     }
 
     .viral-titles {
@@ -1101,16 +1055,17 @@
     }
 
     .viral-title-type {
+      min-width: 96px;
+      color: var(--muted);
       font-size: 0.68rem;
       font-weight: 600;
       letter-spacing: 0.1em;
       text-transform: uppercase;
-      color: var(--muted);
-      min-width: 96px;
     }
 
     .viral-title-text {
       font-size: 0.92rem;
+      line-height: 1.65;
       color: var(--text);
     }
 
@@ -1121,36 +1076,38 @@
 
     .viral-onscreen-item {
       flex: 1;
-      background: var(--bg-soft);
+      padding: 12px 14px;
       border: 1px solid var(--border);
       border-radius: 10px;
-      padding: 12px 14px;
+      background: var(--bg-soft);
     }
 
     .viral-onscreen-label {
+      margin-bottom: 4px;
+      color: var(--muted);
       font-size: 0.68rem;
       font-weight: 600;
       letter-spacing: 0.1em;
       text-transform: uppercase;
-      color: var(--muted);
-      margin-bottom: 4px;
     }
 
     .viral-onscreen-text {
+      color: var(--text);
       font-size: 0.92rem;
       font-weight: 600;
-      color: var(--text);
+      line-height: 1.55;
     }
 
     .viral-flag {
       display: inline-flex;
       align-items: center;
-      gap: 6px;
-      font-size: 0.8rem;
-      color: #92400e;
-      background: #fef3c7;
-      border-radius: 6px;
+      width: fit-content;
       padding: 4px 10px;
+      border-radius: 6px;
+      background: #fef3c7;
+      color: #92400e;
+      font-size: 0.8rem;
+      line-height: 1.5;
     }
 
     .viral-card-foot {
@@ -1165,20 +1122,72 @@
       align-items: center;
       gap: 8px;
       padding: 10px 18px;
-      border-radius: 8px;
       border: 1px solid var(--border);
+      border-radius: 8px;
       background: var(--surface-solid);
       color: var(--text);
-      font-size: 0.88rem;
-      font-weight: 500;
       cursor: pointer;
       text-decoration: none;
+      font-size: 0.88rem;
+      font-weight: 500;
       transition: background 120ms ease, box-shadow 120ms ease;
     }
 
     .btn-download:hover {
       background: var(--bg-soft);
-      box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+    }
+
+    @media (max-width: 1080px) {
+      .doc-layout {
+        grid-template-columns: 1fr;
+      }
+
+      .sidebar {
+        border-right: 0;
+        border-bottom: 1px solid var(--border);
+      }
+
+      .content {
+        padding: 30px 22px 64px;
+      }
+    }
+
+    @media (max-width: 820px) {
+      .page {
+        padding: 12px 10px 64px;
+      }
+
+      .window-bar {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .transcript-intro {
+        grid-template-columns: 1fr;
+      }
+
+      .viral-card-head,
+      .viral-title-row,
+      .viral-onscreen {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .viral-scores {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .section-meta,
+      .clip-meta {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .section-range {
+        text-align: left;
+        white-space: normal;
+      }
     }
   </style>
 </head>
@@ -1202,7 +1211,7 @@
           <div class="sidebar-block">
             <p class="sidebar-label">Editorial Document</p>
             <h1 class="sidebar-title">Enes<br>Afl. 1</h1>
-            <p class="sidebar-copy">Deep dive en volledige edittranscript in een document. In de transcript-tab zie je per blok meteen waar je in de Pixar-structuur zit.</p>
+            <p class="sidebar-copy">Edit brief, virals en volledig edittranscript in een document. In elke tab zie je meteen wat sterk is en waar de editor direct mee verder kan.</p>
             <a class="back-link" href="/libraries/pleintje-afl-1">Back to library</a>
           </div>
 
@@ -1229,7 +1238,7 @@
               </button>
               <button class="tab-button" role="tab" aria-selected="false" aria-controls="panel-viral-shorts" id="tab-viral-shorts" data-tab-target="panel-viral-shorts">
                 <span class="tab-title">Viral Shorts</span>
-                <span class="tab-copy">Top 5 standalone clips gescoord op hook, emotie, quotability en narrative arc.</span>
+                <span class="tab-copy">Top 5 standalone clips met scores, hook-angles, uitleg en XML-download per short.</span>
               </button>
             </div>
           </div>
@@ -1300,7 +1309,7 @@
           <section class="content-panel active" id="panel-deep-dive" role="tabpanel" aria-labelledby="tab-deep-dive">
             <p class="eyebrow">Editorial brief</p>
             <h1>Edit Brief — Het Pleintje Van, Aflevering 1: Enes</h1>
-            <p class="report-kicker">Gegenereerd op basis van roughcut <code>pleintje_afl1_20260505_142807</code> · 33 clips · 13:56</p>
+            <p class="report-kicker">Gegenereerd op basis van roughcut <code>pleintje_afl1_20260505_142807</code> · 33 clips · 11:47</p>
             <section class="spine-feature">
               <div class="spine-feature-head">
                 <div>
@@ -1420,6 +1429,10 @@
                   <div class="beat-note beat-note-strength">
                     <span class="beat-note-label">Sterk omdat</span>
                     <p>Dit maakt van Enes een mens vóór voetballer. Vooral de eerste drie clips geven meteen gedrag en houding, zonder dat het een résumé wordt.</p>
+                  </div>
+                  <div class="beat-note beat-note-risk">
+                    <span class="beat-note-label">Advies</span>
+                    <p>De vriendenkring-clip komt nu deels uit de lucht vallen, omdat de blessure nog niet is geïntroduceerd. Overweeg hem te vervangen door een zuiverdere karakterclip, of schuif hem richting beat 7 zodra de blessure al context heeft gekregen.</p>
                   </div>
                 </div>
               </article>
@@ -1603,7 +1616,7 @@
             <p><strong>Tijdslogica beat 6 → beat 7:</strong> de blessure (~18 jr) lag gedeeltelijk <em>vóór</em> het debuut (13 jan 2020). Het interview vertelt het andersom. De roughcut volgt de Pixar-logica (doorbraak → prijs), niet de chronologie. Dat is de juiste keuze — maar als Enes of de redactie dit wil rechtzetten, kan je een korte tussenzin als voice-over overwegen.</p>
             <p><strong>Beat 3 tijdstip:</strong> de zingclips liggen op ~56:17 in het hoofdinterview — vlak voor het einde. In de roughcut zitten ze op positie 3 (2:00–3:00). Dat vraagt om een harde cut. Zorg dat de editor weet dat dit geen continuïteit-snede is maar een bewuste structuurgreep.</p>
             <p><strong>Ibrahim in beat 2 vs beat 6:</strong> Ibrahim verschijnt twee keer. Eerste keer anoniem (kijker weet nog niet wie hij is), tweede keer als gezinsreactie op het debuut. Als je bij beat 2 zijn naam wil introduceren, kan dat — maar het hoeft niet.</p>
-            <p><strong>Lengte:</strong> 12:58 zit in de groene zone (10-13 min). Beat 8 is het meest kwetsbaar bij inkorten — dat kan terug naar 70 sec als het moet, maar niet verder.</p>
+            <p><strong>Lengte:</strong> 11:47 zit in de groene zone (10-13 min). Beat 8 is het meest kwetsbaar bij inkorten — dat kan terug naar 70 sec als het moet, maar niet verder.</p>
             <hr>
             <p class="report-kicker">Roughcut gegenereerd door Ben's Editbot op basis van 61 min hoofdinterview + 25 min testimonials.</p>
             <p class="report-kicker">XML: <code>roughcuts/pleintje_afl1_20260505_142807.xml</code></p>
@@ -1619,7 +1632,7 @@
                 <div class="pill-row">
                   <span class="pill"><b>11</b> beats gebruikt</span>
                   <span class="pill"><b>33</b> geselecteerde clips</span>
-                  <span class="pill"><b>13:56</b> totale duur</span>
+                  <span class="pill"><b>11:47</b> totale duur</span>
                 </div>
               </div>
               <div class="transcript-card">
@@ -1723,23 +1736,23 @@
                 </div>
                 <div class="section-range">3:00-4:00<br>Wie hij is, hoe hij staat</div>
               </div>
-              <p class="section-summary">Deze passage bouwt het morele profiel van Enes op: rustig, hard geworden, durvend — en verantwoordelijk als grote broer.</p>
+              <p class="section-summary">Deze passage bouwt het morele profiel van Enes op: rustig, hard geworden, durvend. De laatste clip voegt thematisch iets toe, maar voelt zonder eerdere blessurecontext minder voorbereid.</p>
               <div class="clip-list">
                 <article class="clip-card">
                   <div class="clip-meta"><span class="clip-source">HOOFDINTERVIEW</span><span class="clip-time">00:00:44.98-00:01:08.20</span></div>
                   <p class="clip-text">Ik was een rustige jongen. Lieve jongen. Maar ik liet niet over me heen lopen. Sinds jongs af aan ga je met wat oudere jongens om, dan leer je een beetje hard worden. En ook als je veel buiten bent, dan krijg je dat wel een beetje mee.</p>
                 </article>
                 <article class="clip-card">
-                  <div class="clip-meta"><span class="clip-source">HOOFDINTERVIEW</span><span class="clip-time">00:01:09.42-00:01:21.14</span></div>
-                  <p class="clip-text">Je had gewoon jongens van alle soorten leeftijden hier. En dus ook jongens van oudere leeftijd. Je moet toch je mannetje staan naast die jongens. Je kan niet over je heen laten lopen. Ook al ben je een kopje kleiner dan ze.</p>
+                  <div class="clip-meta"><span class="clip-source">HOOFDINTERVIEW</span><span class="clip-time">00:01:27.87-00:01:40.59</span></div>
+                  <p class="clip-text">Je moet toch je mannetje staan naast die jongens. Je kan niet over je heen laten lopen. Ook al ben je een kopje kleiner dan ze.</p>
                 </article>
                 <article class="clip-card">
                   <div class="clip-meta"><span class="clip-source">HOOFDINTERVIEW</span><span class="clip-time">00:01:31.86-00:02:05.80</span></div>
                   <p class="clip-text">Toch een beetje dat, heel grof gezegd, dat scheid. Durven. Het maakt niet uit waar je bent, het maakt niet uit tegen wie. Al zijn het tegen de grootste teams, de grootste spelers. Gewoon laten zien van wie je bent en wat je zelf kan.</p>
                 </article>
                 <article class="clip-card">
-                  <div class="clip-meta"><span class="clip-source">HOOFDINTERVIEW</span><span class="clip-time">00:02:26.05-00:03:15.30</span></div>
-                  <p class="clip-text">En ik heb twee jongere broertjes. Eentje is 19 en eentje is 10. Dus ik ben een grote broer. Ik ben een voorbeeld voor ze. Zo wil ik ook gezien worden en zo gedraag ik me ook voor hun. Je wilt hun het juiste meegeven. Je wilt dat ze de goede kant op gaan, de goede pad bewandelen. Als ik het slechte pad zou bewandelen, dan was dat misschien normaal en zouden ze sneller die kant op gaan. Alleen nu zien ze dat ik discipline heb. Dat ik op jonge leeftijd al heel serieus moest zijn met mijn vak.</p>
+                  <div class="clip-meta"><span class="clip-source">HOOFDINTERVIEW</span><span class="clip-time">00:20:27.44-00:20:52.45</span></div>
+                  <p class="clip-text">Die periode heeft me geleerd dat je toch niet zo heel veel vrienden hebt als je dacht. Op dat moment, ik voetbalde niet. En dan vallen heel veel mensen ook weg uit je leven. Daar ben ik blij mee. Want het heeft me toch laten inzien dat je je cirkel goed moet kiezen en de mensen om je heen goed moet kiezen.</p>
                 </article>
               </div>
             </section>
@@ -1826,16 +1839,16 @@
                   <p class="clip-text">Als ik dan op die leeftijd, volgens mij was ik 18 of 19, toen raakte ik geblesseerd. Eigenlijk net op de leeftijd dat je verwacht dat je debuut mag maken en mag aansluiten bij het eerste elftal. En toen heb ik er heel lang uitgelegen. En het was ook nog in de corona, dus dat maakte het nog lastiger.</p>
                 </article>
                 <article class="clip-card">
-                  <div class="clip-meta"><span class="clip-source">HOOFDINTERVIEW</span><span class="clip-time">00:19:05.97-00:19:21.54</span></div>
+                  <div class="clip-meta"><span class="clip-source">HOOFDINTERVIEW</span><span class="clip-time">00:19:05.97-00:19:30.96</span></div>
                   <p class="clip-text">Een hele lastige periode. Ik denk wel de lastigste die ik in mijn carrière heb gehad. Je was eruit, je was geblesseerd. En toen kwam corona ook nog, dus niemand mocht trainen op de club. Dus dan heb ik echt een aantal maanden alleen één op één met een fysio mogen trainen.</p>
+                </article>
+                <article class="clip-card">
+                  <div class="clip-meta"><span class="clip-source">HOOFDINTERVIEW</span><span class="clip-time">00:19:27.22-00:19:37.51</span></div>
+                  <p class="clip-text">Dus het was echt alleen maar in mijn rolstoel en op mijn krukken trainen naar huis en thuis zitten.</p>
                 </article>
                 <article class="clip-card">
                   <div class="clip-meta"><span class="clip-source">HOOFDINTERVIEW</span><span class="clip-time">00:19:21.54-00:19:48.96</span></div>
                   <p class="clip-text">Ja, je bent nog jong. Je hebt nog nooit zoiets meegemaakt. Je gaat heel veel denken. Kan ik ooit nog voetballen? Want op dat moment kon ik niks. Ik kon niet eens lopen.</p>
-                </article>
-                <article class="clip-card">
-                  <div class="clip-meta"><span class="clip-source">HOOFDINTERVIEW</span><span class="clip-time">00:20:27.44-00:20:52.45</span></div>
-                  <p class="clip-text">Die periode heeft me geleerd dat je toch niet zo heel veel vrienden hebt als je dacht. Op dat moment, ik voetbalde niet. En dan vallen heel veel mensen ook weg uit je leven. Daar ben ik blij mee. Want het heeft me toch laten inzien dat je je cirkel goed moet kiezen en de mensen om je heen goed moet kiezen.</p>
                 </article>
               </div>
             </section>
@@ -1942,13 +1955,295 @@
           </section>
 
           <section class="content-panel" id="panel-viral-shorts" role="tabpanel" aria-labelledby="tab-viral-shorts">
-            <h1 class="report-title">Viral Shorts</h1>
-            <p class="report-kicker">Top 5 standalone clips gescoord op hook · emotie · standalone · quotability · narrative arc · max 50 punten</p>
-            <div id="viral-content">
-              <div class="viral-loading">
-                <div class="viral-loading-spinner"></div>
-                <p>Analyse loopt op de achtergrond — resultaten verschijnen hier zodra de scoring klaar is.</p>
+            <p class="eyebrow">Viral shortlist</p>
+            <h1>Viral Shorts — Enes</h1>
+            <p class="report-kicker">De eerdere run had de scoring al af, maar bleef hangen op een spinner. Hieronder staat die analyse nu echt uitgewerkt, inclusief XML-download per short.</p>
+            <div class="transcript-intro">
+              <div class="transcript-card">
+                <h3>Wat je hier ziet</h3>
+                <p>Dit zijn de vijf sterkste standalone momenten uit het hoofdinterview, gescoord op hook, emotie, zelfstandigheid, quote-waarde en narrative arc. Per kaart zie je meteen waarom het moment werkt en hoe je het zou kunnen framen voor social.</p>
+                <div class="pill-row">
+                  <span class="pill"><b>5</b> shorts geselecteerd</span>
+                  <span class="pill"><b>41.2/50</b> gemiddelde score</span>
+                  <span class="pill"><b>Premiere XML</b> per clip beschikbaar</span>
+                </div>
               </div>
+              <div class="transcript-card">
+                <h3>Hoe je dit gebruikt</h3>
+                <p>De editor kan per kaart meteen het XML-bestand downloaden en importeren in Premiere. De regie kan hier vooral naar de hook-angle, quote en titelrichtingen kijken om te bepalen welk moment het eerst de wereld in moet.</p>
+                <div class="pill-row">
+                  <span class="pill"><b>Hook</b> eerste aandacht</span>
+                  <span class="pill"><b>Quote</b> deelbaarheid</span>
+                  <span class="pill"><b>Arc</b> compleet verhaal</span>
+                </div>
+              </div>
+            </div>
+            <div class="viral-grid">
+              <article class="viral-card">
+                <div class="viral-card-head">
+                  <div class="viral-rank viral-rank-1">#1</div>
+                  <div class="viral-label-block">
+                    <p class="viral-label">Contract signed in hospital</p>
+                    <div class="viral-timecode">00:40:56.42–00:41:50.61 · Personal Story</div>
+                  </div>
+                  <span class="viral-grade grade-viral">🔥 Viral</span>
+                </div>
+                <div class="viral-card-body">
+                  <div class="viral-scores">
+                    <div class="viral-score-item">
+                      <div class="viral-score-val">9</div>
+                      <div class="viral-score-bar-wrap"><div class="viral-score-bar" style="width: 90%;"></div></div>
+                      <div class="viral-score-lbl">Hook</div>
+                    </div>
+                    <div class="viral-score-item">
+                      <div class="viral-score-val">8</div>
+                      <div class="viral-score-bar-wrap"><div class="viral-score-bar" style="width: 80%;"></div></div>
+                      <div class="viral-score-lbl">Emotie</div>
+                    </div>
+                    <div class="viral-score-item">
+                      <div class="viral-score-val">8</div>
+                      <div class="viral-score-bar-wrap"><div class="viral-score-bar" style="width: 80%;"></div></div>
+                      <div class="viral-score-lbl">Standalone</div>
+                    </div>
+                    <div class="viral-score-item">
+                      <div class="viral-score-val">8</div>
+                      <div class="viral-score-bar-wrap"><div class="viral-score-bar" style="width: 80%;"></div></div>
+                      <div class="viral-score-lbl">Quote</div>
+                    </div>
+                    <div class="viral-score-item">
+                      <div class="viral-score-val">9</div>
+                      <div class="viral-score-bar-wrap"><div class="viral-score-bar" style="width: 90%;"></div></div>
+                      <div class="viral-score-lbl">Arc</div>
+                    </div>
+                  </div>
+                  <div class="viral-total">42<span>/50</span></div>
+                  <blockquote class="viral-quote">Ik had nog infuus aan mijn arm. Ik had geen shirt aan. Toen moest ik mijn contract tekenen.</blockquote>
+                  <p class="viral-reason">Dit is een volledig zelfdragend verhaal: privévliegtuig, race tegen de klok, MRI, infuus en een contract met Roma. Je hoeft niets uit de aflevering te kennen om meteen te snappen waarom dit moment blijft hangen.</p>
+                  <div class="viral-titles">
+                    <div class="viral-title-row"><span class="viral-title-type">Curiosity gap</span><span class="viral-title-text">Hoe Enes zijn Roma-contract tekende zonder shirt, met een infuus aan zijn arm</span></div>
+                    <div class="viral-title-row"><span class="viral-title-type">Bold claim</span><span class="viral-title-text">Een privévliegtuig, een MRI, een infuus — zo tekende hij zijn Roma-contract</span></div>
+                    <div class="viral-title-row"><span class="viral-title-type">Emotional</span><span class="viral-title-text">Ze haalden hem midden uit de MRI. Hij had nog bloed aan zijn arm. Maar hij tekende.</span></div>
+                  </div>
+                  <div class="viral-onscreen">
+                    <div class="viral-onscreen-item"><div class="viral-onscreen-label">Opening card</div><div class="viral-onscreen-text">Ze haalden hem uit de MRI om te tekenen</div></div>
+                    <div class="viral-onscreen-item"><div class="viral-onscreen-label">Lower third</div><div class="viral-onscreen-text">INFUUS. CONTRACT. ROMA.</div></div>
+                  </div>
+                </div>
+                <div class="viral-card-foot"><a class="btn-download" href="roughcuts/viral_clip_1_20260506_104406.xml" download="viral_clip_1_20260506_104406.xml">Download XML</a></div>
+              </article>
+
+              <article class="viral-card">
+                <div class="viral-card-head">
+                  <div class="viral-rank viral-rank-2">#2</div>
+                  <div class="viral-label-block">
+                    <p class="viral-label">Mom refused promotion for him</p>
+                    <div class="viral-timecode">00:03:48.91–00:04:46.36 · Personal Story</div>
+                  </div>
+                  <span class="viral-grade grade-viral">🔥 Viral</span>
+                </div>
+                <div class="viral-card-body">
+                  <div class="viral-scores">
+                    <div class="viral-score-item">
+                      <div class="viral-score-val">8</div>
+                      <div class="viral-score-bar-wrap"><div class="viral-score-bar" style="width: 80%;"></div></div>
+                      <div class="viral-score-lbl">Hook</div>
+                    </div>
+                    <div class="viral-score-item">
+                      <div class="viral-score-val">9</div>
+                      <div class="viral-score-bar-wrap"><div class="viral-score-bar" style="width: 90%;"></div></div>
+                      <div class="viral-score-lbl">Emotie</div>
+                    </div>
+                    <div class="viral-score-item">
+                      <div class="viral-score-val">8</div>
+                      <div class="viral-score-bar-wrap"><div class="viral-score-bar" style="width: 80%;"></div></div>
+                      <div class="viral-score-lbl">Standalone</div>
+                    </div>
+                    <div class="viral-score-item">
+                      <div class="viral-score-val">9</div>
+                      <div class="viral-score-bar-wrap"><div class="viral-score-bar" style="width: 90%;"></div></div>
+                      <div class="viral-score-lbl">Quote</div>
+                    </div>
+                    <div class="viral-score-item">
+                      <div class="viral-score-val">8</div>
+                      <div class="viral-score-bar-wrap"><div class="viral-score-bar" style="width: 80%;"></div></div>
+                      <div class="viral-score-lbl">Arc</div>
+                    </div>
+                  </div>
+                  <div class="viral-total">42<span>/50</span></div>
+                  <blockquote class="viral-quote">Ze kon manager worden. Die heeft ze geweigerd. Omdat ze mij had.</blockquote>
+                  <p class="viral-reason">De kracht hier is eenvoud. Eén opoffering, één moeder, één consequentie. Je voelt meteen wat er thuis is gegeven zodat hij dit leven kon najagen, en dat maakt het universeel deelbaar.</p>
+                  <div class="viral-titles">
+                    <div class="viral-title-row"><span class="viral-title-type">Curiosity gap</span><span class="viral-title-text">Wat zijn moeder opgaf zodat hij profvoetballer kon worden</span></div>
+                    <div class="viral-title-row"><span class="viral-title-type">Bold claim</span><span class="viral-title-text">Ze weigerde haar promotie tot manager. Omdat ze hem had. Het heeft uitbetaald.</span></div>
+                    <div class="viral-title-row"><span class="viral-title-type">Emotional</span><span class="viral-title-text">Ze had manager kunnen worden. Ze zei nee. Vanwege hem.</span></div>
+                  </div>
+                  <div class="viral-onscreen">
+                    <div class="viral-onscreen-item"><div class="viral-onscreen-label">Opening card</div><div class="viral-onscreen-text">Zijn moeder kon manager worden. Ze koos anders.</div></div>
+                    <div class="viral-onscreen-item"><div class="viral-onscreen-label">Lower third</div><div class="viral-onscreen-text">ZE ZEGDE NEE VOOR JOU</div></div>
+                  </div>
+                </div>
+                <div class="viral-card-foot"><a class="btn-download" href="roughcuts/viral_clip_2_20260506_104406.xml" download="viral_clip_2_20260506_104406.xml">Download XML</a></div>
+              </article>
+
+              <article class="viral-card">
+                <div class="viral-card-head">
+                  <div class="viral-rank viral-rank-3">#3</div>
+                  <div class="viral-label-block">
+                    <p class="viral-label">Injury showed true friends</p>
+                    <div class="viral-timecode">00:20:31.27–00:21:28.91 · Bold Claim</div>
+                  </div>
+                  <span class="viral-grade grade-viral">🔥 Viral</span>
+                </div>
+                <div class="viral-card-body">
+                  <div class="viral-scores">
+                    <div class="viral-score-item">
+                      <div class="viral-score-val">7</div>
+                      <div class="viral-score-bar-wrap"><div class="viral-score-bar" style="width: 70%;"></div></div>
+                      <div class="viral-score-lbl">Hook</div>
+                    </div>
+                    <div class="viral-score-item">
+                      <div class="viral-score-val">8</div>
+                      <div class="viral-score-bar-wrap"><div class="viral-score-bar" style="width: 80%;"></div></div>
+                      <div class="viral-score-lbl">Emotie</div>
+                    </div>
+                    <div class="viral-score-item">
+                      <div class="viral-score-val">8</div>
+                      <div class="viral-score-bar-wrap"><div class="viral-score-bar" style="width: 80%;"></div></div>
+                      <div class="viral-score-lbl">Standalone</div>
+                    </div>
+                    <div class="viral-score-item">
+                      <div class="viral-score-val">9</div>
+                      <div class="viral-score-bar-wrap"><div class="viral-score-bar" style="width: 90%;"></div></div>
+                      <div class="viral-score-lbl">Quote</div>
+                    </div>
+                    <div class="viral-score-item">
+                      <div class="viral-score-val">8</div>
+                      <div class="viral-score-bar-wrap"><div class="viral-score-bar" style="width: 80%;"></div></div>
+                      <div class="viral-score-lbl">Arc</div>
+                    </div>
+                  </div>
+                  <div class="viral-total">40<span>/50</span></div>
+                  <blockquote class="viral-quote">Als je geblesseerd bent, heb je niet meer zoveel vrienden als je dacht.</blockquote>
+                  <p class="viral-reason">Dit werkt omdat het groter is dan voetbal. Het voelt als een harde, rustige waarheid waar bijna iedereen zich iets bij kan voorstellen. Daardoor is het meteen een quote die buiten de aflevering kan leven.</p>
+                  <div class="viral-titles">
+                    <div class="viral-title-row"><span class="viral-title-type">Curiosity gap</span><span class="viral-title-text">Wat zijn blessure hem leerde over zijn vrienden</span></div>
+                    <div class="viral-title-row"><span class="viral-title-type">Bold claim</span><span class="viral-title-text">Als je niet meer in de spotlights staat, heb je opeens veel minder vrienden</span></div>
+                    <div class="viral-title-row"><span class="viral-title-type">Emotional</span><span class="viral-title-text">Hij lag in een rolstoel. Zijn vrienden verdwenen. Hij zegt nu: ik ben er blij mee.</span></div>
+                  </div>
+                  <div class="viral-onscreen">
+                    <div class="viral-onscreen-item"><div class="viral-onscreen-label">Opening card</div><div class="viral-onscreen-text">Zijn blessure liet zien wie zijn echte vrienden waren</div></div>
+                    <div class="viral-onscreen-item"><div class="viral-onscreen-label">Lower third</div><div class="viral-onscreen-text">GEBLESSEERD. ALLEEN.</div></div>
+                  </div>
+                </div>
+                <div class="viral-card-foot"><a class="btn-download" href="roughcuts/viral_clip_3_20260506_104406.xml" download="viral_clip_3_20260506_104406.xml">Download XML</a></div>
+              </article>
+
+              <article class="viral-card">
+                <div class="viral-card-head">
+                  <div class="viral-rank">#4</div>
+                  <div class="viral-label-block">
+                    <p class="viral-label">Corona injury, couldn't walk</p>
+                    <div class="viral-timecode">00:18:30.85–00:19:27.03 · Emotional</div>
+                  </div>
+                  <span class="viral-grade grade-viral">🔥 Viral</span>
+                </div>
+                <div class="viral-card-body">
+                  <div class="viral-scores">
+                    <div class="viral-score-item">
+                      <div class="viral-score-val">7</div>
+                      <div class="viral-score-bar-wrap"><div class="viral-score-bar" style="width: 70%;"></div></div>
+                      <div class="viral-score-lbl">Hook</div>
+                    </div>
+                    <div class="viral-score-item">
+                      <div class="viral-score-val">9</div>
+                      <div class="viral-score-bar-wrap"><div class="viral-score-bar" style="width: 90%;"></div></div>
+                      <div class="viral-score-lbl">Emotie</div>
+                    </div>
+                    <div class="viral-score-item">
+                      <div class="viral-score-val">7</div>
+                      <div class="viral-score-bar-wrap"><div class="viral-score-bar" style="width: 70%;"></div></div>
+                      <div class="viral-score-lbl">Standalone</div>
+                    </div>
+                    <div class="viral-score-item">
+                      <div class="viral-score-val">8</div>
+                      <div class="viral-score-bar-wrap"><div class="viral-score-bar" style="width: 80%;"></div></div>
+                      <div class="viral-score-lbl">Quote</div>
+                    </div>
+                    <div class="viral-score-item">
+                      <div class="viral-score-val">9</div>
+                      <div class="viral-score-bar-wrap"><div class="viral-score-bar" style="width: 90%;"></div></div>
+                      <div class="viral-score-lbl">Arc</div>
+                    </div>
+                  </div>
+                  <div class="viral-total">40<span>/50</span></div>
+                  <blockquote class="viral-quote">Ik kon niet eens lopen. Kan ik ooit nog voetballen?</blockquote>
+                  <p class="viral-reason">Dit is het laagste punt van zijn verhaal in één zin. Rolstoel, corona en twijfel aan zijn hele toekomst zitten hier allemaal compact in, waardoor het moment zonder extra setup al veel emotioneel gewicht draagt.</p>
+                  <div class="viral-titles">
+                    <div class="viral-title-row"><span class="viral-title-type">Curiosity gap</span><span class="viral-title-text">Waarom Enes dacht dat hij nooit meer zou voetballen</span></div>
+                    <div class="viral-title-row"><span class="viral-title-type">Bold claim</span><span class="viral-title-text">Hij lag in een rolstoel tijdens corona en wist niet of hij ooit nog zou voetballen</span></div>
+                    <div class="viral-title-row"><span class="viral-title-type">Emotional</span><span class="viral-title-text">Hij was 18. Geblesseerd. Corona. Hij kon niet eens lopen meer.</span></div>
+                  </div>
+                  <div class="viral-onscreen">
+                    <div class="viral-onscreen-item"><div class="viral-onscreen-label">Opening card</div><div class="viral-onscreen-text">Hij was 18. In een rolstoel. Tijdens corona.</div></div>
+                    <div class="viral-onscreen-item"><div class="viral-onscreen-label">Lower third</div><div class="viral-onscreen-text">KAN IK NOG VOETBALLEN?</div></div>
+                  </div>
+                </div>
+                <div class="viral-card-foot"><a class="btn-download" href="roughcuts/viral_clip_4_20260506_104406.xml" download="viral_clip_4_20260506_104406.xml">Download XML</a></div>
+              </article>
+
+              <article class="viral-card">
+                <div class="viral-card-head">
+                  <div class="viral-rank">#5</div>
+                  <div class="viral-label-block">
+                    <p class="viral-label">Mom's video makes him cry</p>
+                    <div class="viral-timecode">01:00:23.11–01:01:10.23 · Emotional</div>
+                  </div>
+                  <span class="viral-grade grade-viral">🔥 Viral</span>
+                </div>
+                <div class="viral-card-body">
+                  <div class="viral-scores">
+                    <div class="viral-score-item">
+                      <div class="viral-score-val">7</div>
+                      <div class="viral-score-bar-wrap"><div class="viral-score-bar" style="width: 70%;"></div></div>
+                      <div class="viral-score-lbl">Hook</div>
+                    </div>
+                    <div class="viral-score-item">
+                      <div class="viral-score-val">9</div>
+                      <div class="viral-score-bar-wrap"><div class="viral-score-bar" style="width: 90%;"></div></div>
+                      <div class="viral-score-lbl">Emotie</div>
+                    </div>
+                    <div class="viral-score-item">
+                      <div class="viral-score-val">7</div>
+                      <div class="viral-score-bar-wrap"><div class="viral-score-bar" style="width: 70%;"></div></div>
+                      <div class="viral-score-lbl">Standalone</div>
+                    </div>
+                    <div class="viral-score-item">
+                      <div class="viral-score-val">9</div>
+                      <div class="viral-score-bar-wrap"><div class="viral-score-bar" style="width: 90%;"></div></div>
+                      <div class="viral-score-lbl">Quote</div>
+                    </div>
+                    <div class="viral-score-item">
+                      <div class="viral-score-val">8</div>
+                      <div class="viral-score-bar-wrap"><div class="viral-score-bar" style="width: 80%;"></div></div>
+                      <div class="viral-score-lbl">Arc</div>
+                    </div>
+                  </div>
+                  <div class="viral-total">40<span>/50</span></div>
+                  <blockquote class="viral-quote">Dat is toch mooi als mama dit zegt. Daarvoor doe je het.</blockquote>
+                  <p class="viral-reason">Als emotionele payoff is dit bijna niet te missen: een speler die zichtbaar breekt na de woorden van zijn moeder. Het voelt als de samenvatting van de hele aflevering in één klein, menselijk moment.</p>
+                  <div class="viral-flag">Advies: het einde voelt nog iets te abrupt. Als dit de eerste short wordt, is een net langere uitloop waarschijnlijk beter.</div>
+                  <div class="viral-titles">
+                    <div class="viral-title-row"><span class="viral-title-type">Curiosity gap</span><span class="viral-title-text">Het moment waarop Enes zijn tranen niet meer kon houden</span></div>
+                    <div class="viral-title-row"><span class="viral-title-type">Bold claim</span><span class="viral-title-text">Mama stuurde een video. Hij kon zijn tranen niet houden. 'Daarvoor doe je het.'</span></div>
+                    <div class="viral-title-row"><span class="viral-title-type">Emotional</span><span class="viral-title-text">Zijn moeder stuurde een video. Hij moest verslikken. Dit is wat ze zei.</span></div>
+                  </div>
+                  <div class="viral-onscreen">
+                    <div class="viral-onscreen-item"><div class="viral-onscreen-label">Opening card</div><div class="viral-onscreen-text">Mama stuurde een video. Hij kon zijn tranen niet houden.</div></div>
+                    <div class="viral-onscreen-item"><div class="viral-onscreen-label">Lower third</div><div class="viral-onscreen-text">DAARVOOR DOE JE HET</div></div>
+                  </div>
+                </div>
+                <div class="viral-card-foot"><a class="btn-download" href="roughcuts/viral_clip_5_20260506_104406.xml" download="viral_clip_5_20260506_104406.xml">Download XML</a></div>
+              </article>
             </div>
           </section>
         </main>
